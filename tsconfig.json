@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "pretty": true,
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "strict": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "lib": [
+            "dom",
+            "esnext"
+        ]
+    },
+    "include": [
+        "src/index.ts"
+    ]
+}
