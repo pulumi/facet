@@ -1,8 +1,7 @@
 import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
-import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, fastButton, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest } from "@microsoft/fast-components";
+import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure } from "@microsoft/fast-components";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
-import { color, type, screen, border, padding } from "./design";
-import { counter } from "./components";
+import { color, type, border, padding } from "./design";
 
 function genPalette(baseColorInHexRGB: string) {
     return PaletteRGB.create(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
@@ -21,12 +20,10 @@ const grayPalette = genPalette(color.gray[500]);
 const orangePalette = genPalette(color.orange[500]);
 const greenPalette = genPalette(color.green[500]);
 
-function providePulumiDesignSystem(element?: HTMLElement): DesignSystem {
-    return DesignSystem.getOrCreate(element);
-}
-
-export { counter } from "./components/counter";
 export { color, type, screen } from "./design";
+export { counter } from "./components/counter";
+export { disclosure } from "./components/disclosure";
+export { accordion, accordionItem } from "./components/accordion";
 
 interface DesignSystemOptions {
     element?: HTMLElement;
@@ -61,9 +58,12 @@ export function initDesignSystem(options: DesignSystemOptions) {
         .withPrefix(options.prefix || "pulumi")
         .register(
             fastButton(),
+            fastAccordion(),
+            fastAccordionItem(),
+            fastDisclosure(),
         );
 
-    providePulumiDesignSystem(options.element)
+    DesignSystem.getOrCreate(options.element)
         .withPrefix(prefix)
         .register(...options.components);
 }

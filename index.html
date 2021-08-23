@@ -17,6 +17,26 @@
             </p>
             <h3>Components</h3>
             <pulumi-counter></pulumi-counter>
+            <pulumi-disclosure appearance="lightweight">
+                <strong slot="title">Click it!</strong>
+                <p>
+                    Here is some stuff.
+                </p>
+            </pulumi-disclosure>
+            <pulumi-accordion>
+                <pulumi-accordion-item expanded>
+                    <span slot="heading">Panel one</span>
+                    Panel one content
+                </pulumi-accordion-item>
+                <pulumi-accordion-item>
+                    <span slot="heading">Panel two</span>
+                    Panel two content
+                </pulumi-accordion-item>
+                <pulumi-accordion-item expanded>
+                    <span slot="heading">Panel three</span>
+                    Panel three content
+                </pulumi-accordion-item>
+            </pulumi-accordion>
         </main>
         <script src="./dist/app.js"></script>
     </body>
