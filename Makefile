@@ -13,3 +13,7 @@ serve:
 .PHONY: build
 build:
 	yarn run build
+
+.PHONY: publish
+publish:
+	./scripts/publish.sh
