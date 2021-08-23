@@ -4,6 +4,7 @@
         "target": "es6",
         "module": "es6",
         "moduleResolution": "node",
+        "esModuleInterop": true,
         "importHelpers": true,
         "experimentalDecorators": true,
         "declaration": true,
@@ -15,7 +16,7 @@
         "rootDir": "src",
         "lib": [
             "dom",
-            "esnext"
+            "es6"
         ]
     },
     "include": [

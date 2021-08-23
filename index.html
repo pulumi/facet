@@ -1,20 +1,23 @@
 <html>
     <head>
-        <title>Playing with FAST</title>
+        <title>Pulumi UI</title>
+        <link rel="stylesheet" href="./styles.css">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-            body {
-                font-family: var(--body-font);
-            }
-
             :not(:defined) {
                 visibility: hidden;
             }
         </style>
     </head>
     <body>
-        <pulumi-counter></pulumi-counter>
+        <main>
+            <h1>Pulumi UI</h1>
+            <h2>Welcome to THE FUTURE.</h2>
+            <p>
+                This page has a bunch of components on it. And styles and things.
+            </p>
+            <h3>Components</h3>
+            <pulumi-counter></pulumi-counter>
+        </main>
         <script src="./dist/app.js"></script>
     </body>
 </html>

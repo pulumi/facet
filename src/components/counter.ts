@@ -9,9 +9,8 @@ const counterTemplate = (context: ElementDefinitionContext, definition: CounterD
     const buttonTag = context.tagFor(Button);
 
     return html`
-        <p>The count is ${x => x.count}.</p>
         <${buttonTag} appearance="accent" @click=${x => x.increment()}>
-            <slot>${definition.defaultButtonContent!}</slot> <!--Use the custom configuration-->
+            <slot>This button has been clicked ${x => x.count} time${x => x.count === 1 ? '' : 's'}.</slot>
         </${buttonTag}>
     `;
 }

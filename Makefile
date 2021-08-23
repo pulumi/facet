@@ -1,6 +1,6 @@
 .PHONY: clean
 clean:
-	rm -rf dist
+	rm -rf dist node_modules
 
 .PHONY: ensure
 ensure:
