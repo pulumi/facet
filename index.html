@@ -1,42 +1,71 @@
 <html>
     <head>
-        <title>Pulumi UI</title>
+        <title>Facet Scratchpad</title>
         <link rel="stylesheet" href="./styles.css">
         <style>
             :not(:defined) {
                 visibility: hidden;
             }
+
+            section {
+                margin: calc(var(--base-margin) * 2) var(--base-margin);
+            }
         </style>
     </head>
     <body>
         <main>
-            <h1>Pulumi UI</h1>
-            <h2>Welcome to THE FUTURE.</h2>
-            <p>
-                This page has a bunch of components on it. And styles and things.
-            </p>
-            <h3>Components</h3>
-            <pulumi-counter></pulumi-counter>
-            <pulumi-disclosure appearance="lightweight">
-                <strong slot="title">Click it!</strong>
-                <p>
-                    Here is some stuff.
-                </p>
-            </pulumi-disclosure>
-            <pulumi-accordion>
-                <pulumi-accordion-item expanded>
-                    <span slot="heading">Panel one</span>
-                    Panel one content
-                </pulumi-accordion-item>
-                <pulumi-accordion-item>
-                    <span slot="heading">Panel two</span>
-                    Panel two content
-                </pulumi-accordion-item>
-                <pulumi-accordion-item expanded>
-                    <span slot="heading">Panel three</span>
-                    Panel three content
-                </pulumi-accordion-item>
-            </pulumi-accordion>
+            <section>
+                <h1>Facet Scratchpad</h1>
+            </section>
+
+            <!-- Counter is just a button that does stuff, used for testing. -->
+            <section>
+                <pulumi-counter></pulumi-counter>
+            </section>
+
+            <!-- Disclosure is a control that shows and hides content. -->
+            <section>
+                <pulumi-disclosure appearance="lightweight">
+                    <strong slot="title">Show the stuff...</strong>
+                    <p>
+                        Here is some stuff.
+                    </p>
+                </pulumi-disclosure>
+            </section>
+
+            <!-- Accordion is a control that also shows and hides content. -->
+            <section>
+                <pulumi-accordion expand-mode="multi">
+                    <pulumi-accordion-item>
+                        <span slot="heading">Panel one</span>
+                        Panel one content
+                    </pulumi-accordion-item>
+                    <pulumi-accordion-item>
+                        <span slot="heading">Panel two</span>
+                        Panel two content
+                    </pulumi-accordion-item>
+                    <pulumi-accordion-item>
+                        <span slot="heading">Panel three</span>
+                        Panel three content
+                    </pulumi-accordion-item>
+                </pulumi-accordion>
+            </section>
+
+            <!-- Combobox is a control that lets you select -->
+            <section>
+                <pulumi-combobox>
+                    <pulumi-option>Hi</pulumi-option>
+                    <pulumi-option>Hey</pulumi-option>
+                    <pulumi-option>Hello</pulumi-option>
+                </pulumi-combobox>
+            </section>
+
+            <!-- Checkbox is ... a checkbox. -->
+            <section>
+                <pulumi-checkbox>Thing</pulumi-checkbox>
+                <pulumi-checkbox checked>Other Thing</pulumi-checkbox>
+            </section>
+
         </main>
         <script src="./dist/app.js"></script>
     </body>

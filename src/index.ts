@@ -1,10 +1,11 @@
 import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
-import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure } from "@microsoft/fast-components";
+import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, disclosureStyles } from "@microsoft/fast-components";
+import { html, css } from "@microsoft/fast-element";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
-import { color, type, border, padding } from "./design";
+import { color, type, border, padding, margin } from "./design";
 
 function genPalette(baseColorInHexRGB: string) {
-    return PaletteRGB.create(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
+    return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
 }
 
 const whitePalette = genPalette(color.white);
@@ -21,9 +22,13 @@ const orangePalette = genPalette(color.orange[500]);
 const greenPalette = genPalette(color.green[500]);
 
 export { color, type, screen } from "./design";
-export { counter } from "./components/counter";
-export { disclosure } from "./components/disclosure";
+
 export { accordion, accordionItem } from "./components/accordion";
+export { checkbox } from "./components/checkbox";
+export { counter } from "./components/counter";
+export { combobox } from "./components/combobox";
+export { disclosure } from "./components/disclosure";
+export { option } from "./components/option";
 
 interface DesignSystemOptions {
     element?: HTMLElement;
@@ -34,7 +39,7 @@ interface DesignSystemOptions {
 export function initDesignSystem(options: DesignSystemOptions) {
     const prefix = options.prefix || "pulumi";
 
-    neutralPalette.withDefault(whitePalette);
+    neutralPalette.withDefault(bluePalette);
     accentPalette.withDefault(purplePalette);
 
     bodyFont.withDefault(type.font.default);
@@ -50,20 +55,24 @@ export function initDesignSystem(options: DesignSystemOptions) {
     const basePadding = DesignToken.create<string>("base-padding");
     basePadding.withDefault(padding.default);
 
+    const baseMargin = DesignToken.create<string>("base-margin");
+    baseMargin.withDefault(padding.default);
+
     baseLayerLuminance.withDefault(StandardLuminance.LightMode);
     fillColor.setValueFor(document.body, neutralLayer1);
 
-    // Register all FAST components used by Pulumi UI components.
     provideFASTDesignSystem(options.element)
-        .withPrefix(options.prefix || "pulumi")
+        .withPrefix(prefix)
         .register(
-            fastButton(),
+
+            // Register all required FAST components.
             fastAccordion(),
             fastAccordionItem(),
-            fastDisclosure(),
-        );
+            fastButton(),
+            fastCombobox(),
+            fastOption(),
 
-    DesignSystem.getOrCreate(options.element)
-        .withPrefix(prefix)
-        .register(...options.components);
+            // Register client components.
+            ...options.components,
+        );
 }

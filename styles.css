@@ -29,7 +29,7 @@ h3 {
     line-height: var(--type-ramp-plus-1-line-height);
 }
 
-@font-face {
+/* @font-face {
     font-family: "Gilroy";
     font-weight: 400;
     font-style: normal;
@@ -91,4 +91,4 @@ h3 {
     font-style: italic;
     src: url("/fonts/inter-bold-italic.woff2") format("woff2"),
         url("/fonts/inter-bold-italic.woff") format("woff");
-}
+} */
