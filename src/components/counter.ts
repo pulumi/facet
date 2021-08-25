@@ -36,10 +36,6 @@ export class Counter extends FoundationElement {
     @attr
     count = 0;
 
-    appearanceChanged() {
-        console.log("appearanceChanged", { appearance: this.appearance });
-    }
-
     increment() {
         this.count++;
     }
