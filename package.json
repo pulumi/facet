@@ -14,7 +14,7 @@
     "build": "rm -rf dist && tsc",
     "dev": "rm -rf dist && webpack serve",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

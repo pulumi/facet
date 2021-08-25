@@ -12,12 +12,12 @@ serve:
 
 .PHONY: build
 build:
-	yarn run build
+	./scripts/build.sh
 
 .PHONY: change
 change:
 	yarn run beachball change
 
 .PHONY: publish
-publish:
+publish: build
 	./scripts/publish.sh
