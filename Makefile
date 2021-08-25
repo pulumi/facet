@@ -14,6 +14,10 @@ serve:
 build:
 	yarn run build
 
+.PHONY: change
+change:
+	yarn run beachball change
+
 .PHONY: publish
 publish:
 	./scripts/publish.sh
