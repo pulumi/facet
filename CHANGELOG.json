@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Wed, 25 Aug 2021 17:42:55 GMT",
+      "tag": "@pulumi/facet_v0.0.9",
+      "version": "0.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Ignore storybook-static",
+            "commit": "0e8d93ed231b7cdb00ec3a431c9360cc3404fd27"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 25 Aug 2021 17:28:03 GMT",
       "tag": "@pulumi/facet_v0.0.8",
       "version": "0.0.8",

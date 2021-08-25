@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Ignore storybook-static",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
