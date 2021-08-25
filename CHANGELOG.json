@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Wed, 25 Aug 2021 16:51:32 GMT",
+      "tag": "@pulumi/facet_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Add stories for button, card, combobox, tabs",
+            "commit": "3ff4ed772bc156f5286e1e18b2c176c5b9667ced"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 25 Aug 2021 12:26:59 GMT",
       "tag": "@pulumi/facet_v0.0.6",
       "version": "0.0.6",
