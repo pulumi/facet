@@ -1,3 +1,4 @@
 #!/bin/bash
 
-yarn run beachball publish -m "Apply package updates"
+yarn run beachball publish \
+    --message "Apply package updates"
