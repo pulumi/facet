@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Make an innocuous change",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
