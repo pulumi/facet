@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Add stories for button, card, combobox, tabs",
+  "packageName": "@pulumi/facet",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
