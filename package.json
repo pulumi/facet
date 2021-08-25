@@ -8,6 +8,8 @@
   "dependencies": {
     "@microsoft/fast-components": "^2.6.2",
     "@microsoft/fast-element": "^1.4.1",
+    "@storybook/addons": "^6.3.7",
+    "@storybook/theming": "^6.3.7",
     "concurrently": "^6.2.1",
     "lodash-es": "^4.17.21"
   },

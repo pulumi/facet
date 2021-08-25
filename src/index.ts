@@ -33,6 +33,7 @@ export { option } from "./components/option";
 interface DesignSystemOptions {
     element?: HTMLElement;
     prefix?: string;
+    theme?: "light" | "dark";
     components: any[];
 }
 
@@ -58,7 +59,7 @@ export function initDesignSystem(options: DesignSystemOptions) {
     const baseMargin = DesignToken.create<string>("base-margin");
     baseMargin.withDefault(padding.default);
 
-    baseLayerLuminance.withDefault(StandardLuminance.LightMode);
+    baseLayerLuminance.withDefault(options.theme === "dark" ? StandardLuminance.DarkMode : StandardLuminance.LightMode);
     fillColor.setValueFor(document.body, neutralLayer1);
 
     provideFASTDesignSystem(options.element)
