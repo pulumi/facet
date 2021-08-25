@@ -1,5 +1,5 @@
 import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
-import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, disclosureStyles } from "@microsoft/fast-components";
+import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, fastTab, fastTabPanel, fastTabs, fastCard } from "@microsoft/fast-components";
 import { html, css } from "@microsoft/fast-element";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
 import { color, type, border, padding, margin } from "./design";
@@ -23,13 +23,7 @@ const greenPalette = genPalette(color.green[500]);
 
 export { color, type, screen } from "./design";
 
-export { accordion, accordionItem } from "./components/accordion";
-export { checkbox } from "./components/checkbox";
-export { counter } from "./components/counter";
-export { combobox } from "./components/combobox";
-export { disclosure } from "./components/disclosure";
-export { option } from "./components/option";
-
+export { accordion, accordionItem, card, checkbox, counter, combobox, disclosure, option, tabs, tab, tabPanel, button } from "./components";
 interface DesignSystemOptions {
     element?: HTMLElement;
     prefix?: string;
@@ -70,7 +64,13 @@ export function initDesignSystem(options: DesignSystemOptions) {
             fastAccordion(),
             fastAccordionItem(),
             fastButton(),
+            fastCard(),
+            fastCheckbox(),
             fastCombobox(),
+            fastDisclosure(),
+            fastTab(),
+            fastTabPanel(),
+            fastTabs(),
             fastOption(),
 
             // Register client components.

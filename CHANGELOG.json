@@ -1,0 +1,20 @@
+{
+  "name": "@pulumi/facet",
+  "entries": [
+    {
+      "date": "Wed, 25 Aug 2021 12:26:59 GMT",
+      "tag": "@pulumi/facet_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Test change",
+            "commit": "9678fa1ea9099ca8bf877df00a930c9c8c914c0d"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -51,7 +51,7 @@
                 </pulumi-accordion>
             </section>
 
-            <!-- Combobox is a control that lets you select -->
+            <!-- Combobox is a control that lets you select items from a list. -->
             <section>
                 <pulumi-combobox>
                     <pulumi-option>Hi</pulumi-option>
@@ -64,6 +64,40 @@
             <section>
                 <pulumi-checkbox>Thing</pulumi-checkbox>
                 <pulumi-checkbox checked>Other Thing</pulumi-checkbox>
+            </section>
+
+            <!-- Button is a button. -->
+            <section>
+                <pulumi-button>Hello!</pulumi-button>
+            </section>
+
+            <!-- Tabs are tabs! -->
+            <section>
+                <pulumi-tabs>
+                    <pulumi-tab slot="tab">Tab one</pulumi-tab>
+                    <pulumi-tab slot="tab">Tab two</pulumi-tab>
+                    <pulumi-tab slot="tab">Tab three</pulumi-tab>
+                    <pulumi-tab-panel slot="tabpanel">Tab panel 1</pulumi-tab-panel>
+                    <pulumi-tab-panel slot="tabpanel">Tab panel 2</pulumi-tab-panel>
+                    <pulumi-tab-panel slot="tabpanel">Tab panel 3</pulumi-tab-panel>
+                </pulumi-tabs>
+            </section>
+
+            <!-- Cards are cards. -->
+            <section>
+                <pulumi-card style="width: 300px;">
+                    <img src="https://via.placeholder.com/300x200/414141" />
+                    <div style="padding: var(--base-padding); color: var(--neutral-foreground-rest);">
+                        <h2>Heading</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurisscelerisque varius ornare.
+                            Etiam convallis sollicitudin scelerisque.Maecenas in velit vehicula, aliquet orci et, consequat
+                            purus. Donec egetsodales lectus, vel sollicitudin ligula. Suspendisse volutpat auctor diam,
+                            vel mattis lorem venenatis in.
+                        </p>
+                        <pulumi-button>Button</pulumi-button>
+                    </div>
+                </pulumi-card>
             </section>
 
         </main>

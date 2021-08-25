@@ -1,12 +1,17 @@
-import { initDesignSystem, counter, disclosure, accordion, accordionItem, combobox, option } from "./";
-import { Counter } from "./components/counter";
+import { initDesignSystem, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel } from "./"
 import { html, css } from "@microsoft/fast-element";
 
 const componentPrefix = "pulumi";
 
 initDesignSystem({
     prefix: componentPrefix,
+    theme: "light",
     components: [
+        accordion(),
+        accordionItem(),
+        button(),
+        card(),
+        combobox(),
         counter({
             // template: html`
             //     <${componentPrefix}-button @click=${x => x.increment()}>
@@ -15,10 +20,10 @@ initDesignSystem({
             // `,
         }),
         disclosure(),
-        accordion(),
-        accordionItem(),
-        combobox(),
         option(),
+        tab(),
+        tabPanel(),
+        tabs(),
     ],
 });
 
