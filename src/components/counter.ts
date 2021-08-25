@@ -10,10 +10,9 @@ export const counterTemplate = (context: ElementDefinitionContext, definition: C
     const buttonTag = context.tagFor(Button);
 
     return html`
-        <${buttonTag} @click=${x => x.increment()}>
+        <${buttonTag} appearance="${x => x.appearance}" @click=${x => x.increment()}>
             <slot>
-                This button has been clicked ${(x: Counter) => x.count}
-                time${(x: Counter) => x.count === 1 ? '' : 's'}.
+                This button has been clicked ${x => x.count} times.
             </slot>
         </${buttonTag}>
     `;
@@ -30,7 +29,16 @@ export const counterStyles = (context: ElementDefinitionContext, definition: Fou
 }
 
 export class Counter extends FoundationElement {
-    @attr count = 0;
+
+    @attr
+    appearance = "";
+
+    @attr
+    count = 0;
+
+    appearanceChanged() {
+        console.log("appearanceChanged", { appearance: this.appearance });
+    }
 
     increment() {
         this.count++;

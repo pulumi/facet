@@ -8,11 +8,11 @@ initDesignSystem({
     prefix: componentPrefix,
     components: [
         counter({
-            template: html`
-                <${componentPrefix}-button @click=${x => x.increment()}>
-                    <slot>Click count: ${(x: Counter) => x.count}</slot>
-                </${componentPrefix}-button>
-            `,
+            // template: html`
+            //     <${componentPrefix}-button @click=${x => x.increment()}>
+            //         <slot>Click count: ${(x: Counter) => x.count}</slot>
+            //     </${componentPrefix}-button>
+            // `,
         }),
         disclosure(),
         accordion(),
