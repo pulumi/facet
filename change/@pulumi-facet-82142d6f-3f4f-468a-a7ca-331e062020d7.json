@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Add a bit to the README",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
