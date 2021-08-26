@@ -15,16 +15,22 @@ export default {
                 ],
             },
         },
+        disabled: {
+            control: {
+                type: "boolean",
+            },
+        },
     },
 } as Meta;
 
 export interface ButtonProps {
     appearance: "accent" | "lightweight" | "neutral" | "outline" | "stealth";
+    disabled: boolean;
 }
 
-const Template: Story<ButtonProps> = ({ appearance }) => {
+const Template: Story<ButtonProps> = ({ appearance, disabled }) => {
     return `
-        <pulumi-button appearance="${appearance}">
+        <pulumi-button appearance="${appearance}" ${disabled && "disabled"}>
             Click me
         </pulumi-accordion>
     `;

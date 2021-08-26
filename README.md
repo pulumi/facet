@@ -1,11 +1,11 @@
-# facet
+# Facet
 
-A web component library and UI design system for Pulumi web projects, built on top of [Microsoft FAST](https://www.fast.design/).
+Facet is web component library and UI design system for Pulumi web projects, built with [Microsoft FAST](https://www.fast.design/).
 
 ```
 # Use the right Node.
 $ nvm use
 
-# Install and run the scratchpad and Storybook server.
+# Install and run the sample app and Storybook server.
 $ make clean ensure serve
 ```

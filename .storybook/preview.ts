@@ -2,7 +2,7 @@ import { initDesignSystem, counter, accordion, accordionItem, disclosure } from 
 
 initDesignSystem({
     prefix: "pulumi",
-    theme: "dark",
+    theme: "light",
     components: [
         accordion(),
         accordionItem(),

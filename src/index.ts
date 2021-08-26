@@ -1,8 +1,8 @@
 import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
 import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, fastTab, fastTabPanel, fastTabs, fastCard } from "@microsoft/fast-components";
-import { html, css } from "@microsoft/fast-element";
+import { html, css, Constructable } from "@microsoft/fast-element";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
-import { color, type, border, padding, margin } from "./design";
+import { color, type, border, padding, margin, elevation } from "./design";
 
 function genPalette(baseColorInHexRGB: string) {
     return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
@@ -32,11 +32,6 @@ interface DesignSystemOptions {
 }
 
 export function initDesignSystem(options: DesignSystemOptions) {
-    const prefix = options.prefix || "pulumi";
-
-    neutralPalette.withDefault(bluePalette);
-    accentPalette.withDefault(purplePalette);
-
     bodyFont.withDefault(type.font.default);
 
     typeRampBaseFontSize.withDefault(type.ramp.base.fontSize);
@@ -51,27 +46,30 @@ export function initDesignSystem(options: DesignSystemOptions) {
     basePadding.withDefault(padding.default);
 
     const baseMargin = DesignToken.create<string>("base-margin");
-    baseMargin.withDefault(padding.default);
+    baseMargin.withDefault(margin.default);
 
-    baseLayerLuminance.withDefault(options.theme === "dark" ? StandardLuminance.DarkMode : StandardLuminance.LightMode);
-    fillColor.setValueFor(document.body, neutralLayer1);
+    if (options.theme === "dark") {
+        neutralPalette.withDefault(blackPalette);
+        accentPalette.withDefault(whitePalette);
 
-    provideFASTDesignSystem(options.element)
-        .withPrefix(prefix)
+        baseLayerLuminance.withDefault(StandardLuminance.DarkMode);
+        fillColor.setValueFor(document.body, neutralLayer1);
+    } else {
+        neutralPalette.withDefault(whitePalette);
+        accentPalette.withDefault(bluePalette);
+
+        baseLayerLuminance.withDefault(StandardLuminance.LightMode);
+        fillColor.setValueFor(document.body, neutralLayer1);
+    }
+
+    DesignSystem.getOrCreate(options.element)
+        .withPrefix("pulumi")
         .register(
 
-            // Register all required FAST components.
-            fastAccordion(),
-            fastAccordionItem(),
+            // Register the FAST components that we use in our custom components.
+            // We should only need to register those components that we reference
+            // as custom elements in our own components.
             fastButton(),
-            fastCard(),
-            fastCheckbox(),
-            fastCombobox(),
-            fastDisclosure(),
-            fastTab(),
-            fastTabPanel(),
-            fastTabs(),
-            fastOption(),
 
             // Register client components.
             ...options.components,
