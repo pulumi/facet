@@ -1,7 +1,7 @@
 import { css } from "@microsoft/fast-element";
 import { ElementDefinitionContext, FoundationElementDefinition } from "@microsoft/fast-foundation";
 import { cardStyles } from "@microsoft/fast-components";
-import { elevation } from "../";
+import { elevation } from "../..";
 
 export const wwwCardStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${cardStyles(context, definition)}

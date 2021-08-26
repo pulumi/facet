@@ -1,7 +1,7 @@
 import { Tabs, Tab, TabPanel, tabsTemplate, tabTemplate, tabPanelTemplate } from "@microsoft/fast-foundation";
 import { tabsStyles, tabStyles, tabPanelStyles } from "@microsoft/fast-components";
 import { css } from "@microsoft/fast-element";
-import { margin } from "../design/base";
+import { margin } from "../design/core";
 
 export const tabs = Tabs.compose({
     baseName: "tabs",

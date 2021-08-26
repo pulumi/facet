@@ -1,7 +1,7 @@
 import { css } from "@microsoft/fast-element";
 import { ElementDefinitionContext, FoundationElementDefinition } from "@microsoft/fast-foundation";
 import { tabsStyles } from "@microsoft/fast-components";
-import { border } from "../base";
+import { border } from "../../core";
 
 export const wwwTabsStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${tabsStyles(context, definition)}

@@ -1,5 +1,5 @@
 import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel } from "../"
-import { wwwTabStyles, wwwTabsStyles, wwwTabPanelStyles, wwwCardStyles } from "../design/www";
+import { wwwTabStyles, wwwTabsStyles, wwwTabPanelStyles, wwwCardStyles } from "../design/theme/web";
 import { html, css } from "@microsoft/fast-element";
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles } from "@microsoft/fast-components";
 
