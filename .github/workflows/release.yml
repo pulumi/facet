@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: make ensure build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.1.4
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
           folder: storybook-static
