@@ -14,8 +14,8 @@ serve:
 build:
 	./scripts/build.sh
 
-.PHONY: change
-change:
+.PHONY: changelog
+changelog:
 	yarn run beachball change
 
 .PHONY: publish
