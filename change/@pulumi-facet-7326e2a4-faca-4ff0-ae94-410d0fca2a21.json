@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Add Stencil, update beachball config",
+  "packageName": "@pulumi/facet",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
