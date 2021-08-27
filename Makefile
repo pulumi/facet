@@ -8,7 +8,7 @@ ensure:
 
 .PHONY: serve
 serve:
-	yarn run concurrently 'yarn dev' 'yarn storybook' --raw --kill-others
+	./scripts/serve.sh
 
 .PHONY: build
 build:
