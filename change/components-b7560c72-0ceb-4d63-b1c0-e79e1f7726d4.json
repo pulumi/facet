@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Add Stencil components",
+  "packageName": "components",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
