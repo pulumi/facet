@@ -1,10 +1,10 @@
 .PHONY: clean
 clean:
-	rm -rf dist node_modules
+	./scripts/clean.sh
 
 .PHONY: ensure
 ensure:
-	yarn
+	./scripts/ensure.sh
 
 .PHONY: serve
 serve:

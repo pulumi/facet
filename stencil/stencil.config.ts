@@ -10,16 +10,12 @@ export const config: Config = {
     },
     outputTargets: [
         {
-            // Allows for more isolated development and testing.
-            type: "www",
-            serviceWorker: null,
+            type: "dist",
+            dir: "dist-esm",
         },
         {
-            type: "dist",
-
-            // Publish the bundle to the Hugo site's static directory. Note that this runs in both
-            // dev and production modes.
-            buildDir: "../../dist/stencil/",
+            type: "dist-custom-elements-bundle",
+            dir: "dist",
         },
     ],
     plugins: [

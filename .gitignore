@@ -1,3 +1,4 @@
 dist
+stencil/dist*
 node_modules
 storybook-static
