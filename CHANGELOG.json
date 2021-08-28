@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sat, 28 Aug 2021 21:39:56 GMT",
+      "tag": "@pulumi/facet_v0.0.17",
+      "version": "0.0.17",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Add Stencil as a dep",
+            "commit": "ef6ca75ffe1bd3653adf63c00b42270246f119a8"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 28 Aug 2021 01:52:05 GMT",
       "tag": "@pulumi/facet_v0.0.16",
       "version": "0.0.16",
