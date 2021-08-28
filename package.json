@@ -12,6 +12,7 @@
   "dependencies": {
     "@microsoft/fast-components": "^2.6.2",
     "@microsoft/fast-element": "^1.4.1",
+    "@stencil/core": "^2.7.1",
     "lodash-es": "^4.17.21"
   },
   "scripts": {
