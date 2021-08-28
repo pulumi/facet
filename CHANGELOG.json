@@ -2,6 +2,48 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sat, 28 Aug 2021 01:45:17 GMT",
+      "tag": "@pulumi/facet_v0.0.15",
+      "version": "0.0.15",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Change files",
+            "commit": "a03009a15c9c5a9efc9dbabcbab535cae04a729d"
+          },
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Test bundle",
+            "commit": "a03009a15c9c5a9efc9dbabcbab535cae04a729d"
+          },
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Ignore",
+            "commit": "a03009a15c9c5a9efc9dbabcbab535cae04a729d"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 27 Aug 2021 22:21:04 GMT",
+      "tag": "@pulumi/facet_v0.0.14",
+      "version": "0.0.14",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Test bundle",
+            "commit": "83826fd0b7bd0b6fa6210e426626e463307f4dd1"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 26 Aug 2021 16:48:12 GMT",
       "tag": "@pulumi/facet_v0.0.12",
       "version": "0.0.12",
