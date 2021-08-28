@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sat, 28 Aug 2021 01:52:05 GMT",
+      "tag": "@pulumi/facet_v0.0.16",
+      "version": "0.0.16",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Update the build script",
+            "commit": "dda40120bb30c25c59498df747c4cc1b9aec439e"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 28 Aug 2021 01:45:17 GMT",
       "tag": "@pulumi/facet_v0.0.15",
       "version": "0.0.15",
