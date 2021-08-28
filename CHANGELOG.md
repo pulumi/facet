@@ -1,8 +1,18 @@
 # Change Log - @pulumi/facet
 
-This log was last generated on Fri, 27 Aug 2021 22:21:04 GMT and should not be manually modified.
+This log was last generated on Sat, 28 Aug 2021 01:45:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.15
+
+Sat, 28 Aug 2021 01:45:17 GMT
+
+### Patches
+
+- Change files (c@nunciato.org)
+- Test bundle (c@nunciato.org)
+- Ignore (c@nunciato.org)
 
 ## 0.0.14
 
