@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Add Stencil as a dep",
+  "packageName": "@pulumi/facet",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
