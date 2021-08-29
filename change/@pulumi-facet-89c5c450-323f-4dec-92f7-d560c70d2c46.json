@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Stencil below the components dir",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}

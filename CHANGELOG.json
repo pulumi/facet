@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sun, 29 Aug 2021 17:01:26 GMT",
+      "tag": "@pulumi/facet_v0.0.18",
+      "version": "0.0.18",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Stencil below the components dir",
+            "commit": "87b51a59207235971e605e43f5487a7298da15af"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 28 Aug 2021 21:39:56 GMT",
       "tag": "@pulumi/facet_v0.0.17",
       "version": "0.0.17",
