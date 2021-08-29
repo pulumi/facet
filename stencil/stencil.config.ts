@@ -2,16 +2,19 @@ import { Config } from "@stencil/core";
 import { sass } from "@stencil/sass";
 
 export const config: Config = {
-    namespace: "components",
-    enableCache: false,
+    namespace: "stencil",
     devServer: {
         openBrowser: false,
-        reloadStrategy: "pageReload",
     },
     outputTargets: [
         {
+            type: "dist",
+            dir: "./dist-esm",
+            typesDir: "./dist",
+        },
+        {
             type: "dist-custom-elements-bundle",
-            dir: "./dist"
+            dir: "./dist",
         },
     ],
     plugins: [
