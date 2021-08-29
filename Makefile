@@ -19,5 +19,5 @@ changelog:
 	yarn run beachball change
 
 .PHONY: publish
-publish:
+publish: build
 	./scripts/publish.sh

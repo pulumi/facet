@@ -9,13 +9,12 @@ export const config: Config = {
         reloadStrategy: "pageReload",
     },
     outputTargets: [
-        {
-            type: "dist",
-            dir: "dist-esm",
-        },
+        // {
+        //     type: "dist",
+        //     // dir: "../dist/stencil/dist-esm",
+        // },
         {
             type: "dist-custom-elements-bundle",
-            dir: "dist",
         },
     ],
     plugins: [

@@ -2,7 +2,7 @@ import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionIt
 import { wwwTabStyles, wwwTabsStyles, wwwTabPanelStyles, wwwCardStyles } from "../design/theme/web";
 import { html, css } from "@microsoft/fast-element";
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles } from "@microsoft/fast-components";
-import { PulumiDateCountdown } from "../../stencil/dist";
+import { PulumiDateCountdown } from "../../dist/stencil/dist";
 
 initDesignSystem({
     theme: "light",
