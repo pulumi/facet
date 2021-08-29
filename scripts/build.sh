@@ -6,4 +6,6 @@ yarn run build:storybook
 
 rm -rf stencil/dist
 yarn --cwd stencil run build
-cp -R stencil/dist/custom-elements dist/components/ && mv dist/components/custom-elements dist/components/stencil
+
+mkdir -p dist/components/stencil
+cp stencil/dist/index.js dist/components/stencil/
