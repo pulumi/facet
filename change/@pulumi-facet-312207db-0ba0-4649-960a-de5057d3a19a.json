@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Add esm bundle, types",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
