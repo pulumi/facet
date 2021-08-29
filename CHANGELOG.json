@@ -2,6 +2,27 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sun, 29 Aug 2021 17:36:34 GMT",
+      "tag": "@pulumi/facet_v0.0.19",
+      "version": "0.0.19",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Fetch first, FFS",
+            "commit": "8b9fd4bc7821645fe4743e0d2dce6de071ace131"
+          },
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Adjust build scripts",
+            "commit": "8b9fd4bc7821645fe4743e0d2dce6de071ace131"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 29 Aug 2021 17:01:26 GMT",
       "tag": "@pulumi/facet_v0.0.18",
       "version": "0.0.18",

@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adjust build scripts",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
