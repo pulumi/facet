@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Tue, 31 Aug 2021 21:04:18 GMT",
+      "tag": "@pulumi/facet_v0.0.22",
+      "version": "0.0.22",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Check for swiper before using it",
+            "commit": "3e5c9317af89ad7eb11a5708164e1416a5d879c2"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 29 Aug 2021 22:29:16 GMT",
       "tag": "@pulumi/facet_v0.0.21",
       "version": "0.0.21",
