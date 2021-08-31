@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Check for swiper before using it",
+  "packageName": "@pulumi/facet",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
