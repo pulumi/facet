@@ -14,36 +14,58 @@ $ make clean ensure serve
 
 ## Usage
 
-```
-$ echo "@pulumi:registry=https://npm.pkg.github.com" > .npmrc
-$ yarn add @pulumi/facet
-```
+Facet is currently distributed as a GitHub package. To install and use it:
 
-```
-import { initDesignSystem, button } from "@pulumi/facet";
 
-initDesignSystem({
-    prefix: "pulumi",
-    components: [
-        button(),
-    ],
-});
-```
+1. Export a GitHub personal access token:
 
-```
-<html>
-  <head>
-        <meta charset="utf-8">
-        <title>My Website</title>
-        <style>
-            :not(:defined) {
-                visibility: hidden;
-            }
-        </style>
-  </head>
-  <body>
-        <pulumi-button></pulumi-button>
-        <script src="dist/bundle.js"></script>
-  </body>
-</html>
-```
+    ```
+    export GITHUB_TOKEN="your-token"
+    ```
+
+2. Add an `.npmrc` file alongside your project's `package.json` file:
+
+    ```
+    # Add an .npmrc file for the GitHub package.
+    echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+    @pulumi:registry=https://npm.pkg.github.com" > .npmrc
+    ```
+
+3. Add the package in the usual way:
+
+    ```
+    yarn add @pulumi/facet
+    ```
+
+4. Import it into your project with the module bundler of your choice:
+
+    ```
+    import { initDesignSystem, button } from "@pulumi/facet";
+
+    initDesignSystem({
+        prefix: "pulumi",
+        components: [
+            button(),
+        ],
+    });
+    ```
+
+4. Use the components:
+
+    ```
+    <html>
+    <head>
+            <meta charset="utf-8">
+            <title>My Website</title>
+            <style>
+                :not(:defined) {
+                    visibility: hidden;
+                }
+            </style>
+    </head>
+    <body>
+            <pulumi-button></pulumi-button>
+            <script src="dist/bundle.js"></script>
+    </body>
+    </html>
+    ```

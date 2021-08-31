@@ -3,9 +3,12 @@ import { sass } from "@stencil/sass";
 
 export const config: Config = {
     namespace: "stencil",
+    enableCache: false,
     devServer: {
         openBrowser: false,
     },
+    buildDist: true,
+
     outputTargets: [
         {
             type: "dist",
