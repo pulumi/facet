@@ -5,11 +5,8 @@ Facet is web component library and UI design system for Pulumi web projects, bui
 ## Development
 
 ```
-# Use the right Node.
-$ nvm use
-
-# Install and run the sample app and Storybook server.
-$ make clean ensure serve
+nvm use
+make clean ensure serve
 ```
 
 ## Usage
