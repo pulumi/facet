@@ -114,14 +114,14 @@ export class Swiper {
     @Method()
     public async stopSwiper() {
         if (this.autoplay) {
-            this.swiper.autoplay.stop();
+            this.swiper?.autoplay.stop();
         }
     }
 
     @Method()
     public async startSwiper() {
         if (this.autoplay) {
-            this.swiper.autoplay.start();
+            this.swiper?.autoplay.start();
         }
     }
 
