@@ -1300,11 +1300,6 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@stencil/core@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.7.1.tgz#1bffff72dbe762d27b477da4ea06c647e84472fa"
-  integrity sha512-kpeqCyfoWyqyiqn32xQGx5bpVwH1UtcZEpYPx42MpoxHZNlpmjV+852/PGFFWsMTqrLiP8Z1NU5rT7yXUCsG6Q==
-
 "@storybook/addons@6.3.7":
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.3.7.tgz#7c6b8d11b65f67b1884f6140437fe996dc39537a"

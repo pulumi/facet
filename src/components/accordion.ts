@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, accordionTemplate, accordionItemTemplate, AccordionExpandMode } from "@microsoft/fast-foundation";
+import { Accordion, AccordionItem, accordionTemplate, accordionItemTemplate } from "@microsoft/fast-foundation";
 import { accordionStyles, accordionItemStyles } from "@microsoft/fast-components";
 import { css } from "@microsoft/fast-element";
 
