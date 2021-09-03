@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Fri, 03 Sep 2021 00:20:19 GMT",
+      "tag": "@pulumi/facet_v0.0.23",
+      "version": "0.0.23",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Remove Stencil",
+            "commit": "998394840456d89325402111cf42dde1a8c19ab9"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 31 Aug 2021 21:04:18 GMT",
       "tag": "@pulumi/facet_v0.0.22",
       "version": "0.0.22",
