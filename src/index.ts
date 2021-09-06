@@ -2,7 +2,7 @@ import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
 import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, fastTab, fastTabPanel, fastTabs, fastCard } from "@microsoft/fast-components";
 import { html, css, Constructable } from "@microsoft/fast-element";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
-import { color, type, border, padding, margin, elevation } from "./design";
+import { color, type, screen, border, padding, margin, elevation } from "./design";
 
 function genPalette(baseColorInHexRGB: string) {
     return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
@@ -20,8 +20,6 @@ const redPalette = genPalette(color.red[500]);
 const grayPalette = genPalette(color.gray[500]);
 const orangePalette = genPalette(color.orange[500]);
 const greenPalette = genPalette(color.green[500]);
-
-export { color, type, screen } from "./design";
 
 export { accordion, accordionItem, card, checkbox, counter, combobox, disclosure, option, tabs, tab, tabPanel, button } from "./components";
 interface DesignSystemOptions {

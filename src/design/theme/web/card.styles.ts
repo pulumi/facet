@@ -3,7 +3,7 @@ import { ElementDefinitionContext, FoundationElementDefinition } from "@microsof
 import { cardStyles } from "@microsoft/fast-components";
 import { elevation } from "../../core";
 
-export const wwwCardStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
+export const webCardStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${cardStyles(context, definition)}
 
     :host {

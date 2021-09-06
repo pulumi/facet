@@ -3,7 +3,7 @@ import { ElementDefinitionContext, FoundationElementDefinition } from "@microsof
 import { tabStyles } from "@microsoft/fast-components";
 import { padding } from "../../core";
 
-export const wwwTabStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
+export const webTabStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${tabStyles(context, definition)}
 
     :host {

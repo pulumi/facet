@@ -3,7 +3,7 @@ import { ElementDefinitionContext, FoundationElementDefinition } from "@microsof
 import { tabsStyles } from "@microsoft/fast-components";
 import { border } from "../../core";
 
-export const wwwTabsStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
+export const webTabsStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${tabsStyles(context, definition)}
 
     .tablist {

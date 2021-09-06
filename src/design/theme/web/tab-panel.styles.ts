@@ -3,7 +3,7 @@ import { ElementDefinitionContext, FoundationElementDefinition } from "@microsof
 import { tabPanelStyles } from "@microsoft/fast-components";
 import { margin } from "../../core";
 
-export const wwwTabPanelStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
+export const webTabPanelStyles = (context: ElementDefinitionContext, definition: FoundationElementDefinition) => css`
     ${tabPanelStyles(context, definition)}
 
     :host {

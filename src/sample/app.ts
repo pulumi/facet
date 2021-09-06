@@ -1,7 +1,20 @@
 import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel } from "../../src"
-import { wwwTabStyles, wwwTabsStyles, wwwTabPanelStyles, wwwCardStyles } from "../design/theme/web";
+import { webTabsStyles, webTabStyles, webTabPanelStyles, webCardStyles } from "../design/theme/web";
 import { html, css } from "@microsoft/fast-element";
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles } from "@microsoft/fast-components";
+
+import { type } from "../design";
+
+import { DesignToken } from "@microsoft/fast-foundation";
+
+const fontFamilyDefault = DesignToken.create<string>("font-family-default");
+fontFamilyDefault.withDefault(type.font.default);
+
+const fontFamilyHeading = DesignToken.create<string>("font-family-heading");
+fontFamilyHeading.withDefault(type.font.heading);
+
+const fontFamilyMono = DesignToken.create<string>("font-family-mono");
+fontFamilyMono.withDefault(type.font.mono);
 
 initDesignSystem({
     theme: "light",
@@ -19,7 +32,7 @@ initDesignSystem({
         button(),
         card({
             styles: (ctx: any, def: any) => css`
-                ${wwwCardStyles(ctx, def)}
+                ${webCardStyles(ctx, def)}
             `,
         }),
         checkbox({
@@ -41,17 +54,17 @@ initDesignSystem({
         }),
         tab({
             styles: (ctx: any, def: any) => css`
-                ${wwwTabStyles(ctx, def)}
+                ${webTabStyles(ctx, def)}
             `,
         }),
         tabs({
-            styles: (ctx: any, def: any) => css`
-                ${wwwTabsStyles(ctx, def)}
-            `,
+            // styles: (ctx: any, def: any) => css`
+            //     ${webTabsStyles(ctx, def)}
+            // `,
         }),
         tabPanel({
             styles: (ctx: any, def: any) => css`
-                ${wwwTabPanelStyles(ctx, def)}
+                ${webTabPanelStyles(ctx, def)}
             `,
         }),
     ],
