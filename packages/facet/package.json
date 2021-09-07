@@ -10,18 +10,18 @@
         "dist/**/*"
     ],
     "dependencies": {
-        "@microsoft/fast-components": "^2.6.2",
-        "@microsoft/fast-element": "^1.4.1",
-        "@microsoft/fast-foundation": "^2.6.5",
-        "lodash-es": "^4.17.21"
+        "@microsoft/fast-components": "^2.8.2",
+        "@microsoft/fast-element": "^1.5.0",
+        "@microsoft/fast-foundation": "^2.10.0",
+        "lodash-es": "^4.17.21",
+        "tslib": "latest",
+        "typescript": "^3.9.0"
     },
+    "devDependencies": {},
     "scripts": {
         "build": "rm -rf dist && tsc",
         "dev": "rm -rf dist && webpack serve --mode development",
         "storybook": "start-storybook -p 6006",
         "build:storybook": "build-storybook"
-    },
-    "devDependencies": {
-        "typescript": "^4.3.5"
     }
 }

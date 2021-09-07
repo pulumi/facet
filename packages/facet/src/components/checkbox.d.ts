@@ -1,0 +1,3 @@
+import { CheckboxOptions } from "@microsoft/fast-foundation";
+export declare const checkbox: (overrideDefinition?: import("@microsoft/fast-foundation").OverrideFoundationElementDefinition<CheckboxOptions>) => import("@microsoft/fast-foundation").FoundationElementRegistry<CheckboxOptions, import("@microsoft/fast-element").Constructable<import("@microsoft/fast-foundation").FoundationElement>>;
+//# sourceMappingURL=checkbox.d.ts.map

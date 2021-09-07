@@ -1,0 +1,3 @@
+import { ComboboxOptions } from "@microsoft/fast-foundation";
+export declare const combobox: (overrideDefinition?: import("@microsoft/fast-foundation").OverrideFoundationElementDefinition<ComboboxOptions>) => import("@microsoft/fast-foundation").FoundationElementRegistry<ComboboxOptions, import("@microsoft/fast-element").Constructable<import("@microsoft/fast-foundation").FoundationElement>>;
+//# sourceMappingURL=combobox.d.ts.map

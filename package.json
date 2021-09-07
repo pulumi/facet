@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "license": "MIT",
+    "workspaces": [
+        "packages/*",
+        "sites/*"
+    ],
+    "devDependencies": {
+        "typescript": "^3.9.0"
+    },
+    "scripts": {
+
+    }
+}

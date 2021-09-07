@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "pretty": true,
+        "target": "es6",
+        "module": "es6",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "lib": [
+            "dom",
+            "es6"
+        ]
+    }
+}

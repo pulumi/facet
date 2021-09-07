@@ -1,9 +1,9 @@
-import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel } from "../../src"
-import { webTabsStyles, webTabStyles, webTabPanelStyles, webCardStyles } from "../design/theme/web";
+import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel } from "@pulumi/facet"
+import { webTabsStyles, webTabStyles, webTabPanelStyles, webCardStyles } from "@pulumi/facet/dist/design/theme";
 import { html, css } from "@microsoft/fast-element";
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles } from "@microsoft/fast-components";
 
-import { type } from "../design";
+import { type } from "@pulumi/facet/dist/design";
 
 import { DesignToken } from "@microsoft/fast-foundation";
 

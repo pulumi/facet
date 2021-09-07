@@ -5,14 +5,14 @@ module.exports = function(env, { mode }) {
         mode: mode || "production",
         devtool: "inline-source-map",
         entry: {
-            app: "./src/sample/app.ts",
+            app: "./src/index.ts",
         },
         output: {
             filename: "[name].js",
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: "./src/sample/index.html",
+                template: "./src/index.html",
                 inject: "body",
             }),
         ],
@@ -22,10 +22,8 @@ module.exports = function(env, { mode }) {
         },
         devServer: {
             port: 9000,
-            historyApiFallback: true,
             writeToDisk: true,
-            open: !process.env.CI,
-            lazy: false
+            open: true,
         },
         module: {
             rules: [
