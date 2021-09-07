@@ -3,4 +3,8 @@
 rm -rf \
     dist \
     node_modules \
-    storybook-static
+    packages/facet/dist \
+    packages/facet/node_modules \
+    packages/facet/storybook-static \
+    sites/sandbox/dist \
+    sites/sandbox/node_modules

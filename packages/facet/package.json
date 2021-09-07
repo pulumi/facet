@@ -17,11 +17,13 @@
         "tslib": "latest",
         "typescript": "^3.9.0"
     },
-    "devDependencies": {},
+    "devDependencies": {
+
+    },
     "scripts": {
+        "dev": "rm -rf dist && tsc --watch",
         "build": "rm -rf dist && tsc",
-        "dev": "rm -rf dist && webpack serve --mode development",
-        "storybook": "start-storybook -p 6006",
+        "dev:storybook": "start-storybook -p 6006",
         "build:storybook": "build-storybook"
     }
 }
