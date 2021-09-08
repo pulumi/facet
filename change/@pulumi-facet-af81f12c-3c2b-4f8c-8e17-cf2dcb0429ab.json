@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Move a whole bunch of things around, but keep the API the same",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
