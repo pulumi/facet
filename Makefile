@@ -14,6 +14,10 @@ serve:
 build:
 	./scripts/build.sh
 
+.PHONY: deploy
+deploy:
+	./scripts/deploy.sh
+
 .PHONY: changelog
 changelog:
 	yarn run beachball change
