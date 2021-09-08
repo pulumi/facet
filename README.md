@@ -23,8 +23,8 @@ Facet is currently distributed as a GitHub package. To install and use it:
 2. Add an `.npmrc` file alongside your project's `package.json` file:
 
     ```
-    echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-    @pulumi:registry=https://npm.pkg.github.com" > .npmrc
+    echo '//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+    @pulumi:registry=https://npm.pkg.github.com' > .npmrc
     ```
 
 3. Add the package in the usual way:

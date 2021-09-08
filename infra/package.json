@@ -1,12 +1,10 @@
 {
-    "name": "facet-infra",
+    "name": "@pulumi/facet-infra",
     "devDependencies": {
         "@types/node": "^10.0.0"
     },
     "dependencies": {
         "@cnunciato/pulumi-jamstack-aws": "^0.1.3",
-        "@pulumi/aws": "^4.0.0",
-        "@pulumi/awsx": "^0.30.0",
         "@pulumi/pulumi": "^3.0.0"
     }
 }

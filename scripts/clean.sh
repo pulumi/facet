@@ -7,4 +7,5 @@ rm -rf \
     packages/facet/node_modules \
     packages/facet/storybook-static \
     sites/sandbox/dist \
-    sites/sandbox/node_modules
+    sites/sandbox/node_modules \
+    infra/node_modules

@@ -1733,7 +1733,7 @@
   resolved "https://registry.yarnpkg.com/@microsoft/fast-colors/-/fast-colors-5.1.3.tgz#5c46147401a823835a3833e3e18dae7f06016966"
   integrity sha512-XDEnRYxPO5P3Jsizm4TCxLu1osS/uV3Lym6SfRhq2PxfXPTgEcdvOYDUXyV2drqebs3U5VQnOcYcJiSp73xhng==
 
-"@microsoft/fast-components@^2.8.2":
+"@microsoft/fast-components@^2.6.2", "@microsoft/fast-components@^2.8.2":
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/@microsoft/fast-components/-/fast-components-2.8.2.tgz#532fe4d5a1f824a500e23d709df968ca6cc59676"
   integrity sha512-IwahRsjf3HYQbNK6Nxo7P0ZDCkj+JBQQko/qF77K0ldHeyGdO7+EsooRUkkyAeeek/plANf6sd6T4ve7zJPgAA==
@@ -1745,7 +1745,7 @@
     tslib "^1.13.0"
     vscode-html-languageservice "^4.0.3"
 
-"@microsoft/fast-element@^1.5.0":
+"@microsoft/fast-element@^1.4.1", "@microsoft/fast-element@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@microsoft/fast-element/-/fast-element-1.5.0.tgz#fcef9058cb007561f9fa85dcf537cbb618aec8b3"
   integrity sha512-usrPwHFdV4w4nZ3vlBbTYy9lXwfu0QJWfjHItgIqBIGkUIoWotW91BQaszt3xlQXx8e3v8294WEMtfc/MCukRA==
@@ -1842,6 +1842,15 @@
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.1.tgz#728ecd95ab207aab8a9a4e421f0422db329232be"
   integrity sha512-HnUhk1Sy9IuKrxEMdIRCxpIqPw6BFsbYSEUO9p/hNw5sMld/+3OLMWQP80F8/db9qsv3qUjs7ZR5bS/R+iinXw==
+
+"@pulumi/facet@^0.0.23":
+  version "0.0.23"
+  resolved "https://npm.pkg.github.com/download/@pulumi/facet/0.0.23/f6cb7f63101f07a89c5c580ee761313e1f8d1527c00b3a03a460a8efd302d669#65876cf5c49151d4b7832ac005205d496fd1d734"
+  integrity sha512-1M8wDXCOA8bAIk0fPS48bH1ZPkpVLxzeI2dySyxGA5lGxNeRzsjiIclQ5vMqmMmp0ao4FjvLHFWS7KITM2ZyxQ==
+  dependencies:
+    "@microsoft/fast-components" "^2.6.2"
+    "@microsoft/fast-element" "^1.4.1"
+    lodash-es "^4.17.21"
 
 "@reach/router@^1.3.4":
   version "1.3.4"
