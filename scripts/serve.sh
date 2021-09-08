@@ -7,5 +7,6 @@ yarn --cwd packages/facet run build
 # and watch all of them for changes.
 yarn run concurrently \
     "yarn --cwd packages/facet run dev" \
+    "yarn --cwd packages/facet run dev:storybook" \
     "yarn --cwd sites/sandbox run dev" \
     --raw --kill-others

@@ -1,6 +1,6 @@
 import { initDesignSystem, counter, accordion, accordionItem, disclosure, tab, tabs, tabPanel, combobox, button, card, checkbox, option } from "../src";
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles } from "@microsoft/fast-components";
-import { wwwTabStyles, wwwTabsStyles, wwwTabPanelStyles } from "../src/design/theme/web";
+import { webTabStyles, webTabsStyles, webTabPanelStyles } from "@pulumi/facet/dist/design/theme";
 import { css } from "@microsoft/fast-element";
 
 initDesignSystem({
