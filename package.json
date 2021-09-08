@@ -6,10 +6,9 @@
         "sites/*"
     ],
     "devDependencies": {
+        "beachball": "^2.11.0",
         "concurrently": "^6.2.1",
         "typescript": "^3.9.0"
     },
-    "scripts": {
-
-    }
+    "scripts": {}
 }
