@@ -8,7 +8,14 @@
     "devDependencies": {
         "beachball": "^2.11.0",
         "concurrently": "^6.2.1",
+        "http-server": "^13.0.1",
         "typescript": "^3.9.0"
     },
-    "scripts": {}
+    "resolutions": {
+        "terser": "4.8.0"
+    },
+    "scripts": {
+        "static:sandbox": "yarn run http-server sites/sandbox/dist",
+        "static:website": "yarn run http-server sites/website/build"
+    }
 }

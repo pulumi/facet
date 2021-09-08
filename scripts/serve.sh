@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Run an initial build, so the sandbox site has something to start with.
+# Run an initial Facet build, so the websites have something to start with.
 yarn --cwd packages/facet run build
 
-# Start servers for the sandbox, Storybook, documentation site, and Facet package,
-# and watch all of them for changes.
+# Start services for the website, sandbox site, Storybook site, and Facet package.
 yarn run concurrently \
     "yarn --cwd packages/facet run dev" \
     "yarn --cwd packages/facet run dev:storybook" \
     "yarn --cwd sites/sandbox run dev" \
+    "yarn --cwd sites/website run dev" \
     --raw --kill-others

@@ -5,7 +5,7 @@ module.exports = function(env, { mode }) {
         mode: mode || "production",
         devtool: "inline-source-map",
         entry: {
-            app: "./src/index.ts",
+            index: "./src/index.ts",
         },
         output: {
             filename: "[name].js",
