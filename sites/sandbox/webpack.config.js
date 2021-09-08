@@ -21,7 +21,7 @@ module.exports = function(env, { mode }) {
             modules: ["src", "node_modules"]
         },
         devServer: {
-            port: 9000,
+            port: 4000,
             writeToDisk: true,
             open: true,
         },

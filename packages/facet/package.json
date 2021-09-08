@@ -23,7 +23,7 @@
     "scripts": {
         "dev": "tsc --watch",
         "build": "tsc",
-        "dev:storybook": "start-storybook -p 6006",
+        "dev:storybook": "start-storybook -p 4001",
         "build:storybook": "build-storybook"
     }
 }
