@@ -1,31 +1,50 @@
-import { DesignSystem, DesignToken } from "@microsoft/fast-foundation";
-import { accentPalette, neutralPalette, PaletteRGB, provideFASTDesignSystem, SwatchRGB, bodyFont, typeRampBaseFontSize, controlCornerRadius, typeRampBaseLineHeight, baseLayerLuminance, fillColor, neutralLayer1, neutralLayerCardContainer, StandardLuminance, neutralForegroundRest, fastAccordionItem, fastButton, fastAccordion, fastDisclosure, fastCombobox, fastOption, fastCheckbox, fastTab, fastTabPanel, fastTabs, fastCard } from "@microsoft/fast-components";
-import { html, css, Constructable } from "@microsoft/fast-element";
-import { parseColorHexRGB } from "@microsoft/fast-colors";
-import { color, type, screen, border, padding, margin, elevation } from "./design";
+import {
+    DesignSystem,
+    DesignToken
+} from "@microsoft/fast-foundation";
 
-function genPalette(baseColorInHexRGB: string) {
-    return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
-}
+import {
+    accentPalette,
+    neutralPalette,
+    bodyFont,
+    typeRampBaseFontSize,
+    controlCornerRadius,
+    typeRampBaseLineHeight,
+    baseLayerLuminance,
+    fillColor,
+    neutralLayer1,
+    neutralLayerCardContainer,
+    StandardLuminance,
+    neutralForegroundRest,
+    fastAccordionItem,
+    fastButton,
+    fastAccordion,
+    fastDisclosure,
+    fastCombobox,
+    fastOption,
+    fastCheckbox,
+    fastTab,
+    fastTabPanel,
+    fastTabs,
+    fastCard,
+} from "@microsoft/fast-components";
 
-export const whitePalette = genPalette(color.white);
-export const blackPalette = genPalette(color.black);
-export const yellowPalette = genPalette(color.brand.yellow);
-export const salmonPalette = genPalette(color.brand.salmon);
-export const fuchsiaPalette = genPalette(color.brand.fuchsia);
-export const purplePalette = genPalette(color.brand.purple);
-export const violetPalette = genPalette(color.brand.violet);
-export const bluePalette = genPalette(color.brand.blue);
-export const redPalette = genPalette(color.red[500]);
-export const grayPalette = genPalette(color.gray[500]);
-export const orangePalette = genPalette(color.orange[500]);
-export const greenPalette = genPalette(color.green[500]);
-
-export { accordion, accordionItem, card, checkbox, counter, combobox, disclosure, option, tabs, tab, tabPanel, button } from "./components";
+import {
+    whitePalette,
+    bluePalette,
+    blackPalette,
+    type,
+    screen,
+    border,
+    padding,
+    margin,
+    elevation,
+} from "./design";
 interface DesignSystemOptions {
     element?: HTMLElement;
     prefix?: string;
-    theme?: "light" | "dark";
+    mode?: "light" | "dark";
+    theme?: "web" | "console";
     components: any[];
 }
 
@@ -46,7 +65,7 @@ export function initDesignSystem(options: DesignSystemOptions) {
     const baseMargin = DesignToken.create<string>("base-margin");
     baseMargin.withDefault(margin.default);
 
-    if (options.theme === "dark") {
+    if (options.mode === "dark") {
         neutralPalette.withDefault(blackPalette);
         accentPalette.withDefault(whitePalette);
 
@@ -73,3 +92,7 @@ export function initDesignSystem(options: DesignSystemOptions) {
             ...options.components,
         );
 }
+
+// Export everything at the top level.
+export * from "./design";
+export * from "./components";

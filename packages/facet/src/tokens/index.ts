@@ -1,6 +1,9 @@
 // This file is responsible for producing the token files consumed by Style Dictionary.
 
+import { PaletteRGB } from "@microsoft/fast-components";
+
 import {
+    border,
     color,
     blackPalette,
     whitePalette,
@@ -14,16 +17,14 @@ import {
     redPalette,
     violetPalette,
     bluePalette,
-    border,
     elevation,
     margin,
     padding,
     screen,
     type,
-// } from "@pulumi/facet/dist/design";
 } from "../design";
 
-function getColorToken(name: string, palette: any) {
+function getColorToken(name: string, palette: PaletteRGB) {
     return {
         [name]: {
             base: {
@@ -55,7 +56,7 @@ const tokens = {
         ...getColorToken("blue", bluePalette),
     },
 
-    // border,
+    border,
     // elevation,
     // margin,
     // padding,

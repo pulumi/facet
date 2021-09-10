@@ -15,7 +15,7 @@ fontFamilyMono.withDefault(type.font.mono);
 
 initDesignSystem({
     prefix: "pulumi",
-    theme: "light",
+    mode: "light",
     components: [
         accordion(),
         accordionItem(),

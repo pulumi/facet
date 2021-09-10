@@ -1,14 +1,42 @@
 import { PaletteRGB, SwatchRGB } from "@microsoft/fast-components";
 import { parseColorHexRGB } from "@microsoft/fast-colors";
 
-const brand = {
-    yellow: "#f7bf2a",
-    salmon: "#f26e7e",
-    fuchsia: "#bd4c85",
-    purple: "#8a3391",
-    violet: "#805ac3",
-    blue: "#4d5bd9",
+// These are the base colors from which we derive all tints and shades.
+const color = {
+    brand: {
+        yellow: "#f7bf2a",
+        salmon: "#f26e7e",
+        fuchsia: "#bd4c85",
+        purple: "#8a3391",
+        violet: "#805ac3",
+        blue: "#4d5bd9",
+    },
+    supplemental: {
+        white: "#ffffff",
+        black: "#000000",
+        red: "#f56565",
+        gray: "#bebfc9",
+        orange: "#ee975c",
+        green: "#2fc89f",
+    },
 };
+
+const whitePalette = genPalette(color.supplemental.white);
+const blackPalette = genPalette(color.supplemental.black);
+const yellowPalette = genPalette(color.brand.yellow);
+const salmonPalette = genPalette(color.brand.salmon);
+const fuchsiaPalette = genPalette(color.brand.fuchsia);
+const purplePalette = genPalette(color.brand.purple);
+const violetPalette = genPalette(color.brand.violet);
+const bluePalette = genPalette(color.brand.blue);
+const redPalette = genPalette(color.supplemental.red);
+const grayPalette = genPalette(color.supplemental.gray);
+const orangePalette = genPalette(color.supplemental.orange);
+const greenPalette = genPalette(color.supplemental.green);
+
+function genPalette(baseColorInHexRGB: string) {
+    return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
+}
 
 const red = {
     100: "#fff5f5",
@@ -40,7 +68,7 @@ const yellow = {
     300: "#fce5aa",
     400: "#fad97f",
     500: "#f9cc55",
-    600: brand.yellow,
+    600: color.brand.yellow,
     700: "#c69922",
     800: "#947319",
     900: "#634c11",
@@ -52,7 +80,7 @@ const salmon = {
     300: "#fac5cb",
     400: "#f7a8b2",
     500: "#f58b98",
-    600: brand.salmon,
+    600: color.brand.salmon,
     700: "#c25865",
     800: "#91424c",
     900: "#612c32",
@@ -64,7 +92,7 @@ const fuchsia = {
     300: "#e5b7ce",
     400: "#d794b6",
     500: "#ca709d",
-    600: brand.fuchsia,
+    600: color.brand.fuchsia,
     700: "#973d6a",
     800: "#712e50",
     900: "#4c1e35",
@@ -76,7 +104,7 @@ const purple = {
     300: "#d0add3",
     400: "#b985bd",
     500: "#a15ca7",
-    600: brand.purple,
+    600: color.brand.purple,
     700: "#6e2974",
     800: "#531f57",
     900: "#37143a",
@@ -88,7 +116,7 @@ const violet = {
     300: "#ccbde7",
     400: "#b39cdb",
     500: "#997bcf",
-    600: brand.violet,
+    600: color.brand.violet,
     700: "#66489c",
     800: "#4d3675",
     900: "#33244e",
@@ -100,7 +128,7 @@ const blue = {
     300: "#b8bdf0",
     400: "#949de8",
     500: "#717ce1",
-    600: brand.blue,
+    600: color.brand.blue,
     700: "#3e49ae",
     800: "#2e3782",
     900: "#1f2457",
@@ -130,35 +158,34 @@ const green = {
     900: "#155148",
 }
 
-export const color = {
-    white: "#ffffff",
-    black: "#000000",
-    brand,
-    red,
-    gray,
-    yellow,
-    salmon,
-    fuchsia,
-    purple,
-    violet,
-    blue,
-    orange,
-    green,
+export {
+    color,
+    whitePalette,
+    blackPalette,
+    yellowPalette,
+    salmonPalette,
+    fuchsiaPalette,
+    purplePalette,
+    violetPalette,
+    bluePalette,
+    redPalette,
+    grayPalette,
+    orangePalette,
+    greenPalette,
 };
 
-function genPalette(baseColorInHexRGB: string) {
-    return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
-}
-
-export const whitePalette = genPalette(color.white);
-export const blackPalette = genPalette(color.black);
-export const yellowPalette = genPalette(color.brand.yellow);
-export const salmonPalette = genPalette(color.brand.salmon);
-export const fuchsiaPalette = genPalette(color.brand.fuchsia);
-export const purplePalette = genPalette(color.brand.purple);
-export const violetPalette = genPalette(color.brand.violet);
-export const bluePalette = genPalette(color.brand.blue);
-export const redPalette = genPalette(color.red[500]);
-export const grayPalette = genPalette(color.gray[500]);
-export const orangePalette = genPalette(color.orange[500]);
-export const greenPalette = genPalette(color.green[500]);
+// export const color = {
+//     white: "#ffffff",
+//     black: "#000000",
+//     brand,
+//     red,
+//     gray,
+//     yellow,
+//     salmon,
+//     fuchsia,
+//     purple,
+//     violet,
+//     blue,
+//     orange,
+//     green,
+// };

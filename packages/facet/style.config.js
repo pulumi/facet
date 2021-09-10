@@ -27,7 +27,15 @@ module.exports = {
             buildPath: "dist/tokens/scss/",
             files: [{
                 format: "scss/map-deep",
-                destination: "_tokens.scss",
+                destination: "_variables.scss",
+            }],
+        },
+        css: {
+            transformGroup: "css",
+            buildPath: "dist/tokens/css/",
+            files: [{
+                destination: `variables.css`,
+                format: `css/variables`,
             }],
         },
     },
