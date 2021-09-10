@@ -1,30 +1,36 @@
 {
-  "name": "@pulumi/facet",
-  "version": "0.0.24",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pulumi/facet.git"
-  },
-  "main": "dist/index.js",
-  "files": [
-    "dist/**/*"
-  ],
-  "dependencies": {
-    "@babel/core": "^7.15.5",
-    "@microsoft/fast-components": "^2.8.2",
-    "@microsoft/fast-element": "^1.5.0",
-    "@microsoft/fast-foundation": "^2.10.0",
-    "@storybook/html": "^6.3.8",
-    "lodash-es": "^4.17.21",
-    "tslib": "latest",
-    "typescript": "^3.9.0",
-    "webpack": "^5.52.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "dev:storybook": "start-storybook -p 4001",
-    "build:storybook": "build-storybook"
-  }
+    "name": "@pulumi/facet",
+    "version": "0.0.24",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pulumi/facet.git",
+        "directory": "packages/facet"
+    },
+    "main": "dist/index.js",
+    "files": [
+        "dist/**/*"
+    ],
+    "dependencies": {
+        "@microsoft/fast-components": "^2.8.2",
+        "@microsoft/fast-element": "^1.5.0",
+        "@microsoft/fast-foundation": "^2.10.0",
+        "lodash-es": "^4.17.21"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "@storybook/html": "^6.3.8",
+        "style-dictionary": "^3.0.2",
+        "tslib": "^2.0.0",
+        "typescript": "^3.9.0",
+        "webpack": "^5.52.0"
+    },
+    "scripts": {
+        "dev": "tsc --watch",
+        "dev:storybook": "start-storybook -p 4002",
+        "build": "tsc",
+        "build:tokens-json": "webpack && mkdir -p ./dist/tokens/json && node ./dist/index.js > ./dist/tokens/json/tokens.json && rm ./dist/index.js",
+        "build:tokens-public": "style-dictionary build --config ./style.config.js",
+        "build:storybook": "build-storybook"
+    }
 }

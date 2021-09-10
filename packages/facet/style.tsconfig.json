@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "pretty": true,
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "outDir": "dist/tokens",
+    },
+    "include": [
+        "./src/tokens/index.ts"
+    ]
+}

@@ -8,18 +8,18 @@ function genPalette(baseColorInHexRGB: string) {
     return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
 }
 
-const whitePalette = genPalette(color.white);
-const blackPalette = genPalette(color.black);
-const yellowPalette = genPalette(color.brand.yellow);
-const salmonPalette = genPalette(color.brand.salmon);
-const fuchsiaPalette = genPalette(color.brand.fuchsia);
-const purplePalette = genPalette(color.brand.purple);
-const violetPalette = genPalette(color.brand.violet);
-const bluePalette = genPalette(color.brand.blue);
-const redPalette = genPalette(color.red[500]);
-const grayPalette = genPalette(color.gray[500]);
-const orangePalette = genPalette(color.orange[500]);
-const greenPalette = genPalette(color.green[500]);
+export const whitePalette = genPalette(color.white);
+export const blackPalette = genPalette(color.black);
+export const yellowPalette = genPalette(color.brand.yellow);
+export const salmonPalette = genPalette(color.brand.salmon);
+export const fuchsiaPalette = genPalette(color.brand.fuchsia);
+export const purplePalette = genPalette(color.brand.purple);
+export const violetPalette = genPalette(color.brand.violet);
+export const bluePalette = genPalette(color.brand.blue);
+export const redPalette = genPalette(color.red[500]);
+export const grayPalette = genPalette(color.gray[500]);
+export const orangePalette = genPalette(color.orange[500]);
+export const greenPalette = genPalette(color.green[500]);
 
 export { accordion, accordionItem, card, checkbox, counter, combobox, disclosure, option, tabs, tab, tabPanel, button } from "./components";
 interface DesignSystemOptions {
