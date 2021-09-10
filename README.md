@@ -40,6 +40,8 @@ Facet is currently distributed as a GitHub package. To install and use it:
 
     initDesignSystem({
         prefix: "pulumi",
+        mode: "light"
+        theme: "web",
         components: [
             button(),
         ],
@@ -53,14 +55,9 @@ Facet is currently distributed as a GitHub package. To install and use it:
     <head>
             <meta charset="utf-8">
             <title>My Website</title>
-            <style>
-                :not(:defined) {
-                    visibility: hidden;
-                }
-            </style>
     </head>
     <body>
-            <pulumi-button></pulumi-button>
+            <pulumi-button appearance="accent">Hellos 👋</pulumi-button>
             <script src="dist/bundle.js"></script>
     </body>
     </html>
