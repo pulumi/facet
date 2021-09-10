@@ -1,3 +1,6 @@
+import { PaletteRGB, SwatchRGB } from "@microsoft/fast-components";
+import { parseColorHexRGB } from "@microsoft/fast-colors";
+
 const brand = {
     yellow: "#f7bf2a",
     salmon: "#f26e7e",
@@ -142,3 +145,20 @@ export const color = {
     orange,
     green,
 };
+
+function genPalette(baseColorInHexRGB: string) {
+    return PaletteRGB.from(SwatchRGB.from(parseColorHexRGB(baseColorInHexRGB)!))
+}
+
+export const whitePalette = genPalette(color.white);
+export const blackPalette = genPalette(color.black);
+export const yellowPalette = genPalette(color.brand.yellow);
+export const salmonPalette = genPalette(color.brand.salmon);
+export const fuchsiaPalette = genPalette(color.brand.fuchsia);
+export const purplePalette = genPalette(color.brand.purple);
+export const violetPalette = genPalette(color.brand.violet);
+export const bluePalette = genPalette(color.brand.blue);
+export const redPalette = genPalette(color.red[500]);
+export const grayPalette = genPalette(color.gray[500]);
+export const orangePalette = genPalette(color.orange[500]);
+export const greenPalette = genPalette(color.green[500]);

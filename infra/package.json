@@ -1,5 +1,6 @@
 {
     "name": "@pulumi/facet-infra",
+    "private": true,
     "devDependencies": {
         "@types/node": "^10.0.0"
     },

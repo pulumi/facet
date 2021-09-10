@@ -1,19 +1,19 @@
 {
     "compilerOptions": {
         "pretty": true,
-        "target": "es6",
-        "module": "es6",
+        "target": "es2015",
+        "module": "esnext",
         "moduleResolution": "node",
         "esModuleInterop": true,
         "importHelpers": true,
         "experimentalDecorators": true,
         "declaration": true,
         "declarationMap": true,
-        "sourceMap": true,
         "noEmitOnError": true,
+        "sourceMap": true,
         "lib": [
             "dom",
-            "es6"
+            "es2015"
         ]
     }
 }
