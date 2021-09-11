@@ -24,7 +24,7 @@ import {
     type,
 } from "../design";
 
-function getColorToken(name: string, palette: PaletteRGB) {
+function getPalette(name: string, palette: PaletteRGB) {
     return {
         [name]: {
             base: {
@@ -40,20 +40,48 @@ function getColorToken(name: string, palette: PaletteRGB) {
     };
 }
 
+function getTintsAndShades(name: string, color: any) {
+    return {
+        [name]: Object.entries(color)
+            .map(([ key, value]) => ({ [key]: { value } }))
+            .reduce((result, item) => Object.assign(result, item)),
+    };
+}
+
 const tokens = {
     color: {
-        ...getColorToken("black", blackPalette),
-        ...getColorToken("white", whitePalette),
-        ...getColorToken("gray", grayPalette),
-        ...getColorToken("fuchsia", fuchsiaPalette),
-        ...getColorToken("green", greenPalette),
-        ...getColorToken("orange", orangePalette),
-        ...getColorToken("purple", purplePalette),
-        ...getColorToken("yellow", yellowPalette),
-        ...getColorToken("salmon", salmonPalette),
-        ...getColorToken("red", redPalette),
-        ...getColorToken("violet", violetPalette),
-        ...getColorToken("blue", bluePalette),
+        black: { value: color.support.black },
+        white: { value: color.support.white },
+        brand: {
+            yellow: { value: color.brand.yellow},
+            salmon: { value: color.brand.salmon},
+            fuchsia:{ value: color.brand.fuchsia},
+            purple: { value: color.brand.purple},
+            violet: { value: color.brand.violet},
+            blue: { value: color.brand.blue},
+        },
+        ...getTintsAndShades("red", color.red),
+        ...getTintsAndShades("gray", color.gray),
+        ...getTintsAndShades("yellow", color.yellow),
+        ...getTintsAndShades("salmon", color.salmon),
+        ...getTintsAndShades("fuchsia", color.fuchsia),
+        ...getTintsAndShades("purple", color.purple),
+        ...getTintsAndShades("violet", color.violet),
+        ...getTintsAndShades("blue", color.blue),
+        ...getTintsAndShades("green", color.green),
+        ...getTintsAndShades("orange", color.orange),
+        // ...getPalette("black", blackPalette),
+        // ...getPalette("white", whitePalette),
+        // ...getPalette("gray", grayPalette),
+        // ...getPalette("fuchsia", fuchsiaPalette),
+        // ...getPalette("green", greenPalette),
+        // ...getPalette("orange", orangePalette),
+        // ...getPalette("purple", purplePalette),
+        // ...getPalette("yellow", yellowPalette),
+        // ...getPalette("salmon", salmonPalette),
+        // ...getPalette("red", redPalette),
+        // ...getPalette("violet", violetPalette),
+        // ...getPalette("blue", bluePalette),
     },
 
     border,
