@@ -2,6 +2,21 @@
   "name": "@pulumi/facet-sandbox",
   "entries": [
     {
+      "date": "Sat, 11 Sep 2021 15:43:32 GMT",
+      "tag": "@pulumi/facet-sandbox_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet-sandbox",
+            "commit": "e965360c014052c5f4d36363806966d90d9c3c9e",
+            "comment": "Bump @pulumi/facet-sandbox to v0.0.1"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 08 Sep 2021 00:31:32 GMT",
       "tag": "@pulumi/facet-sandbox_v0.0.1",
       "version": "0.0.1",
