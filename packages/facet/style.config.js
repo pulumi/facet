@@ -26,7 +26,7 @@ module.exports = {
             transformGroup: "scss",
             buildPath: "dist/tokens/scss/",
             files: [{
-                format: "scss/map-deep",
+                format: "scss/variables",
                 destination: "_variables.scss",
             }],
         },
