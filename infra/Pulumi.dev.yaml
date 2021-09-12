@@ -2,4 +2,4 @@ config:
   aws:region: us-west-2
   facet-infra:domainHost: facet
   facet-infra:domainName: pulumi-dev.io
-  facet-infra:websitePath: ../sites/website/build
+  facet-infra:websitePath: ../sites/facet/build

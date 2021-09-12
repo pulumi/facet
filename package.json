@@ -16,6 +16,6 @@
     },
     "scripts": {
         "static:sandbox": "yarn run http-server sites/sandbox/dist",
-        "static:website": "yarn run http-server sites/website/build"
+        "static:website": "yarn run http-server sites/facet/build"
     }
 }

@@ -9,5 +9,5 @@ yarn run concurrently \
     "yarn --cwd packages/facet run dev:storybook" \
     "yarn --cwd packages/facet run dev:tokens" \
     "yarn --cwd sites/sandbox run dev" \
-    "yarn --cwd sites/website run dev" \
+    "yarn --cwd sites/facet run dev" \
     --raw --kill-others
