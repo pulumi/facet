@@ -13,20 +13,8 @@ import {
     baseLayerLuminance,
     fillColor,
     neutralLayer1,
-    neutralLayerCardContainer,
     StandardLuminance,
-    neutralForegroundRest,
-    fastAccordionItem,
     fastButton,
-    fastAccordion,
-    fastDisclosure,
-    fastCombobox,
-    fastOption,
-    fastCheckbox,
-    fastTab,
-    fastTabPanel,
-    fastTabs,
-    fastCard,
 } from "@microsoft/fast-components";
 
 import {

@@ -2,6 +2,8 @@
 
 Facet is web component library and UI design system for Pulumi web projects, built with [Microsoft FAST](https://www.fast.design/).
 
+http://facet.pulumi-dev.io
+
 ## Development
 
 ```
@@ -40,7 +42,7 @@ Facet is currently distributed as a GitHub package. To install and use it:
 
     initDesignSystem({
         prefix: "pulumi",
-        mode: "light"
+        mode: "light",
         theme: "web",
         components: [
             button(),

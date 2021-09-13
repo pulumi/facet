@@ -247,12 +247,12 @@
                 </pulumi-card>
             </section>
 
-            <pulumi-date-countdown
-                date-string="2021-10-20T09:00:00-07:00"
-                text-class="text-3xl text-black text-center"
-                value-label-class="text-xl"
-                countdown-over-text="The Cloud Engineering Summit has started!"
-            ></pulumi-date-countdown>
+            <pulumi-tree-view>
+                <pulumi-tree-item>Tree item 1
+                    <pulumi-tree-item slot="item">Tree item 1.5</pulumi-tree-item>
+                </pulumi-tree-item>
+                <pulumi-tree-item>Tree item 2</pulumi-tree-item>
+            </pulumi-tree-view>
 
         </main>
     </body>
