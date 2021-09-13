@@ -6,8 +6,11 @@ rm -rf \
     packages/facet/dist \
     packages/facet/node_modules \
     packages/facet/storybook-static \
-    packages/facet-tokens/dist \
-    packages/facet-tokens/node_modules \
+    packages/facet/dist \
+    packages/facet/node_modules \
     sites/sandbox/dist \
     sites/sandbox/node_modules \
+    sites/facet/node_modules \
+    sites/facet/.docusaurus \
+    sites/facet/build \
     infra/node_modules

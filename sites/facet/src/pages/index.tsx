@@ -5,7 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-import { initDesignSystem, button } from "@pulumi/facet";
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import { useEffect } from 'react'
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
@@ -30,14 +31,31 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
     const { siteConfig } = useDocusaurusContext();
 
-    initDesignSystem({
-        element: document.querySelector(":root"),
-        prefix: "pulumi",
-        mode: "light",
-        components: [
-            button(),
-        ],
+    useEffect(() => {
+        import("@pulumi/facet").then((f) => {
+            f.initDesignSystem({
+                element: document.querySelector(":root"),
+                prefix: "pulumi",
+                mode: "light",
+                components: [
+                    f.button(),
+                ],
+            });
+        });
     });
+
+    // if (typeof window !== "undefined" && typeof document !== "undefined") {
+    //     import("@pulumi/facet").then((f) => {
+    //         f.initDesignSystem({
+    //             element: document.querySelector(":root"),
+    //             prefix: "pulumi",
+    //             mode: "light",
+    //             components: [
+    //                 f.button(),
+    //             ],
+    //         });
+    //     });
+    // }
 
     return (
         <Layout

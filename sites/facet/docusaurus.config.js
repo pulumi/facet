@@ -73,7 +73,7 @@ module.exports = {
                     items: [
                         {
                             label: 'Design Tokens',
-                            href: '/design-system/design-tokens',
+                            href: '/docs/design-system/design-tokens',
                         },
                     ],
                 },

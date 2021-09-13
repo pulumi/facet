@@ -4,7 +4,7 @@
  * work well for content-centric websites.
  */
 
-/* Import the Facet color palette (as CSS design tokens). */
+/* Import the Facet design tokens (as CSS variables). */
 @import "@pulumi/facet/dist/tokens/css/variables";
 
 :root {

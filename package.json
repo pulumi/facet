@@ -14,8 +14,11 @@
     "resolutions": {
         "terser": "4.8.0"
     },
+    "nohoist": [
+      "**/html-minifier-terser"
+    ],
     "scripts": {
         "static:sandbox": "yarn run http-server sites/sandbox/dist",
-        "static:website": "yarn run http-server sites/facet/build"
+        "static:facet": "yarn run http-server sites/facet/build"
     }
 }
