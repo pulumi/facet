@@ -5,5 +5,5 @@ pushd infra
 
     pulumi login
     pulumi stack select dev
-    pulumi up
+    pulumi up --yes
 popd
