@@ -7,3 +7,4 @@ export { combobox } from "./combobox";
 export { disclosure } from "./disclosure";
 export { option } from "./option";
 export { tabs, tab, tabPanel} from "./tabs";
+export { treeView, treeItem } from "./treeview";
