@@ -7,4 +7,4 @@ yarn --cwd packages/facet run build
 
 git fetch -p
 git rebase origin/master
-yarn run beachball publish --yes --access public --message "Apply package updates"
+yarn run beachball publish --yes --access public --message "Publish"
