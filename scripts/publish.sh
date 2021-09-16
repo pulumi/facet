@@ -1,3 +1,5 @@
 #!/bin/bash
 
-yarn run beachball publish --yes --message "Apply package updates"
+git fetch -p
+git rebase origin/master
+yarn run beachball publish --yes --access public --message "Apply package updates"
