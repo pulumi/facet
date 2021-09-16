@@ -1,5 +1,3 @@
 #!/bin/bash
 
-git fetch -p
-git rebase origin/master
-yarn run beachball publish --message "Apply package updates"
+yarn run beachball publish --yes --message "Apply package updates"
