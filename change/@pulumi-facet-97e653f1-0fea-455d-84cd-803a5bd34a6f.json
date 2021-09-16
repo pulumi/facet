@@ -1,0 +1,6 @@
+{
+  "type": "patch",
+  "packageName": "@pulumi/facet",
+  "email": "c@nunciato.org",
+  "dependentChangeType": "patch"
+}
