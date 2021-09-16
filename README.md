@@ -2,32 +2,16 @@
 
 Facet is web component library and UI design system for Pulumi web projects, built with [Microsoft FAST](https://www.fast.design/).
 
-## Development
-
-```
-nvm use
-make clean ensure serve
-```
-
 ## Usage
 
-Facet is currently distributed as a GitHub package. To install and use it:
+Facet is distributed as an npm package. To use it:
 
 
-1. Export a GitHub personal access token:
-
-    ```
-    export GITHUB_TOKEN="your-token"
-    ```
-
-2. Add an `.npmrc` file alongside your project's `package.json` file:
+3. Install package in the usual way:
 
     ```
-    echo '//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-    @pulumi:registry=https://npm.pkg.github.com' > .npmrc
+    npm install @pulumi/facet
     ```
-
-3. Add the package in the usual way:
 
     ```
     yarn add @pulumi/facet
@@ -40,7 +24,7 @@ Facet is currently distributed as a GitHub package. To install and use it:
 
     initDesignSystem({
         prefix: "pulumi",
-        mode: "light"
+        mode: "light",
         theme: "web",
         components: [
             button(),
@@ -62,3 +46,12 @@ Facet is currently distributed as a GitHub package. To install and use it:
     </body>
     </html>
     ```
+
+## Development
+
+```
+nvm use
+make clean ensure serve
+```
+
+More docs to come...

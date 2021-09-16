@@ -10,7 +10,7 @@ import { initDesignSystem, button } from "@pulumi/facet";
 initDesignSystem({
     prefix: "pulumi",
     components: [
-        button();
+        button(),
     ],
 });
 ```
@@ -18,9 +18,9 @@ initDesignSystem({
 With the design system initialized, you can start adding components to your pages:
 
 ```html
-<pulumi-button>Click me!</pulumi-button>
+<pulumi-button onclick="alert('Hooray! 🎉');">Click me</pulumi-button>
 ```
 
-Live result:
+And you should see your components come to life:
 
-<pulumi-button>Click me!</pulumi-button>
+<pulumi-button onclick="alert('Hooray! 🎉');">Click me</pulumi-button>

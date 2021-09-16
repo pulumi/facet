@@ -14,6 +14,7 @@ const site = new Website("website", {
         host: domainHost,
         name: domainName,
     },
+    protocol: "https",
 });
 
 export const {

@@ -1,9 +1,6 @@
 
 name: Deploy
 on:
-  release:
-    types:
-      - created
   push:
     branches:
       - master
@@ -13,8 +10,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
+
+      - uses: actions/setup-node@v2
         with:
-          persist-credentials: false
+          node-version: '14.x'
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -22,7 +21,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
-          role-to-assume: ${{ secrets.AWS_CI_ROLE_ARN }}
+          role-to-assume: ${{ secrets.AWS_DEV_STACKS_ROLE_ARN }}
           role-session-name: DeployWebsiteSession
 
       - name: Build and Deploy 🚀
@@ -30,3 +29,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_STACK_NAME: pulumi/dev
