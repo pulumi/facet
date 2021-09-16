@@ -15,11 +15,6 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Set Git User
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-
       - name: Build and Publish ✨
         run: make ensure build publish
         env:
