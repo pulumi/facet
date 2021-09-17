@@ -1,0 +1,24 @@
+{
+    "TagSet": [
+        {
+            "Key": "VantaOwner",
+            "Value": "lee@pulumi.com"
+        },
+        {
+            "Key": "VantaNonProd",
+            "Value": "true"
+        },
+        {
+            "Key": "VantaDescription",
+            "Value": "Facet website bucket"
+        },
+        {
+            "Key": "VantaContainsUserData",
+            "Value": "false"
+        },
+        {
+            "Key": "VantaNoAlert",
+            "Value": "The Facet website is not part of our production service."
+        }
+    ]
+}

@@ -21,8 +21,8 @@ module.exports = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             {
                 docs: {
+                    routeBasePath: "/",
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
                     editUrl: 'https://github.com/pulumi/facet/edit/master/sites/facet/',
                 },
                 theme: {
@@ -30,6 +30,10 @@ module.exports = {
                 },
             },
         ],
+    ],
+
+    clientModules: [
+        require.resolve("./src/main.js"),
     ],
 
     themeConfig:
@@ -46,7 +50,7 @@ module.exports = {
             },
             items: [
                 {
-                    href: '/docs/intro',
+                    href: '/',
                         label: 'Docs',
                     },
                 {
@@ -64,7 +68,11 @@ module.exports = {
                     items: [
                         {
                             label: 'Intro',
-                            to: '/docs/intro',
+                            to: '/',
+                        },
+                        {
+                            label: 'Getting Started',
+                            to: '/getting-started/installing',
                         },
                     ],
                 },
@@ -73,7 +81,7 @@ module.exports = {
                     items: [
                         {
                             label: 'Design Tokens',
-                            href: '/docs/design-system/design-tokens',
+                            href: '/design-system/design-tokens',
                         },
                     ],
                 },
