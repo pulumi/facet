@@ -1,4 +1,4 @@
-import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel, treeView, treeItem } from "@pulumi/facet";
+import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel, treeView, treeItem, textField } from "@pulumi/facet";
 
 import { type } from "@pulumi/facet/dist/design/core";
 
@@ -31,5 +31,6 @@ initDesignSystem({
         tabPanel(),
         treeView(),
         treeItem(),
+        textField(),
     ],
 });

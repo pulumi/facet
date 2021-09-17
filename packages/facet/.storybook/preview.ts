@@ -1,5 +1,5 @@
-import { initDesignSystem, counter, accordion, accordionItem, disclosure, tab, tabs, tabPanel, combobox, button, card, checkbox, option, treeView, treeItem } from "../src";
-import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles, treeViewStyles, treeItemStyles } from "@microsoft/fast-components";
+import { initDesignSystem, counter, accordion, accordionItem, disclosure, tab, tabs, tabPanel, combobox, button, card, checkbox, option, treeView, treeItem, textField } from "../src";
+import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles, treeViewStyles, treeItemStyles, textFieldStyles } from "@microsoft/fast-components";
 import { webTabStyles, webTabsStyles, webTabPanelStyles } from "@pulumi/facet/dist/design/theme";
 import { css } from "@microsoft/fast-element";
 import "../../facet/src/components/treeNav";
@@ -64,6 +64,11 @@ initDesignSystem({
         treeItem({
             styles: (ctx: any, def: any) => css`
                 ${treeItemStyles(ctx, def)}
+            `,
+        }),
+        textField({
+            styles: (ctx: any, def: any) => css`
+                ${textFieldStyles(ctx, def)}
             `,
         }),
     ],
