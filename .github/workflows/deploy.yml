@@ -15,17 +15,8 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-west-2
-          role-to-assume: ${{ secrets.AWS_DEV_STACKS_ROLE_ARN }}
-          role-session-name: DeployWebsiteSession
-
       - name: Build and Deploy 🚀
-        run: make ensure build deploy
+        run: make ensure build # deploy Actually, skip the deploy step for now.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
