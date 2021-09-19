@@ -1,8 +1,16 @@
 # Change Log - @pulumi/facet
 
-This log was last generated on Thu, 16 Sep 2021 05:03:40 GMT and should not be manually modified.
+This log was last generated on Sun, 19 Sep 2021 01:27:03 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.34
+
+Sun, 19 Sep 2021 01:27:03 GMT
+
+### Patches
+
+- Add Rollup, browser-friendly bundles (c@nunciato.org)
 
 ## 0.0.33
 

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@pulumi/facet": "^0.0.33"
+    "@pulumi/facet": "^0.0.34"
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.3.2",

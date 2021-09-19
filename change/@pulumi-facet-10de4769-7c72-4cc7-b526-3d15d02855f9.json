@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Add Rollup, browser-friendly bundles",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
