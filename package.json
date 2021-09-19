@@ -11,9 +11,6 @@
         "http-server": "^13.0.1",
         "typescript": "^3.9.0"
     },
-    "resolutions": {
-        "terser": "4.8.0"
-    },
     "nohoist": [
       "**/html-minifier-terser"
     ],

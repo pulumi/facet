@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit -o pipefail
+
 rm -rf \
     dist \
     node_modules \
