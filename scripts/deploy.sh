@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit -o pipefail
+
 pushd infra
     pulumi login
     pulumi stack select "${PULUMI_STACK_NAME}"

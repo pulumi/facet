@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit -o pipefail
+
 rm -rf \
     packages/facet/dist \
     packages/facet/storybook-static \

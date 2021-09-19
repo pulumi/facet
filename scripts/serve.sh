@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -o errexit -o pipefail
+
 # Run an initial Facet build, so the websites have something to start with.
 yarn --cwd packages/facet run build
 
