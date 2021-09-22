@@ -1,8 +1,16 @@
 # Change Log - @pulumi/facet-website
 
-This log was last generated on Sun, 19 Sep 2021 01:27:03 GMT and should not be manually modified.
+This log was last generated on Wed, 22 Sep 2021 20:45:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.1
+
+Wed, 22 Sep 2021 20:45:01 GMT
+
+### Patches
+
+- Bump @pulumi/facet to v0.0.35
 
 ## 0.0.1
 
