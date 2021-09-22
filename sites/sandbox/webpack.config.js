@@ -35,8 +35,8 @@ module.exports = function(env, { mode }) {
                         }
                     ],
                     exclude: /node_modules/
-                }
-            ]
-        }
-    }
-}
+                },
+            ],
+        },
+    };
+};
