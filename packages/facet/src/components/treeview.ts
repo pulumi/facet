@@ -7,6 +7,9 @@ export const treeView = TreeView.compose({
     template: treeViewTemplate as any,
     styles: (ctx, def) => css`
         ${treeViewStyles(ctx, def as any)}
+        :host {
+            min-width: auto;
+        }
     `,
 });
 
@@ -20,5 +23,8 @@ export const treeItem = TreeItem.compose({
     `,
     styles: (ctx, def) => css`
         ${treeItemStyles(ctx, def as any)}
+        :host([selected])::after {
+            display: none;
+        }
     `,
 });

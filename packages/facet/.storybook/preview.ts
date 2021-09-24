@@ -2,7 +2,6 @@ import { initDesignSystem, counter, accordion, accordionItem, disclosure, tab, t
 import { accordionStyles, accordionItemStyles, cardStyles, comboboxStyles, tabStyles, tabsStyles, tabPanelStyles, optionStyles, checkboxStyles, treeViewStyles, treeItemStyles, textFieldStyles } from "@microsoft/fast-components";
 import { webTabStyles, webTabsStyles, webTabPanelStyles } from "@pulumi/facet/dist/design/theme";
 import { css } from "@microsoft/fast-element";
-import "../../facet/src/components/treeNav";
 
 initDesignSystem({
     prefix: "pulumi",

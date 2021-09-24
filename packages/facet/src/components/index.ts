@@ -9,4 +9,3 @@ export { option } from "./option";
 export { tabs, tab, tabPanel} from "./tabs";
 export { treeView, treeItem } from "./treeview";
 export { textField } from "./textfield";
-export { TreeNav } from "./treeNav";
