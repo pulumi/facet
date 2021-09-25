@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Sat, 25 Sep 2021 03:49:08 GMT",
+      "tag": "@pulumi/facet_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "kimberley@pulumi.com",
+            "package": "@pulumi/facet",
+            "comment": "Add treeview, treeitem, and textfield components alongside Storybook and sandbox updates.",
+            "commit": "b84def33cffc0e47cfd821f360190314b710c101"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 22 Sep 2021 21:02:32 GMT",
       "tag": "@pulumi/facet_v0.0.35",
       "version": "0.0.35",

@@ -1,8 +1,16 @@
 # Change Log - @pulumi/facet
 
-This log was last generated on Wed, 22 Sep 2021 21:02:32 GMT and should not be manually modified.
+This log was last generated on Sat, 25 Sep 2021 03:49:08 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.0
+
+Sat, 25 Sep 2021 03:49:08 GMT
+
+### Minor changes
+
+- Add treeview, treeitem, and textfield components alongside Storybook and sandbox updates. (kimberley@pulumi.com)
 
 ## 0.0.35
 
