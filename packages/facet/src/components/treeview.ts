@@ -26,5 +26,9 @@ export const treeItem = TreeItem.compose({
         :host([selected])::after {
             display: none;
         }
+        
+        :host([selected]) * {
+            font-weight: bold;
+        }
     `,
 });
