@@ -15,7 +15,7 @@
   "dependencies": {
     "@microsoft/fast-components": "^2.11.9",
     "@microsoft/fast-element": "^1.5.1",
-    "@microsoft/fast-foundation": "^2.15.0",
+    "@microsoft/fast-foundation": "^2.17.1",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
