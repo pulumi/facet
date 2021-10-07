@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Add treeview, treeitem, and textfield components alongside Storybook and sandbox updates.",
-  "packageName": "@pulumi/facet",
-  "email": "kimberley@pulumi.com",
-  "dependentChangeType": "patch"
-}

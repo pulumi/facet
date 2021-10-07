@@ -2,6 +2,21 @@
   "name": "@pulumi/facet-website",
   "entries": [
     {
+      "date": "Thu, 07 Oct 2021 18:10:43 GMT",
+      "tag": "@pulumi/facet-website_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pulumi/facet-website",
+            "comment": "Bump @pulumi/facet to v0.1.0",
+            "commit": "e5f3b6a4daed06f44847cd96e8496e380daa8a7d"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 22 Sep 2021 21:02:32 GMT",
       "tag": "@pulumi/facet-website_v0.0.1",
       "version": "0.0.1",
