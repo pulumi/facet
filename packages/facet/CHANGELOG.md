@@ -1,8 +1,17 @@
 # Change Log - @pulumi/facet
 
-This log was last generated on Thu, 07 Oct 2021 18:10:43 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Oct 2021 20:28:59 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.1
+
+Thu, 07 Oct 2021 20:28:59 GMT
+
+### Patches
+
+- Upgrade fast components to pull in bug fix. (c@nunciato.org)
+- Upgrade fast components to pull in bug fix. (kimberley@pulumi.com)
 
 ## 0.1.0
 

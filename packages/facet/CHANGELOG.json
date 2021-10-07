@@ -2,6 +2,27 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Thu, 07 Oct 2021 20:28:59 GMT",
+      "tag": "@pulumi/facet_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "c@nunciato.org",
+            "package": "@pulumi/facet",
+            "comment": "Upgrade fast components to pull in bug fix.",
+            "commit": "cc9eba80ecd023df40938b74e667316f65570921"
+          },
+          {
+            "author": "kimberley@pulumi.com",
+            "package": "@pulumi/facet",
+            "comment": "Upgrade fast components to pull in bug fix.",
+            "commit": "cc9eba80ecd023df40938b74e667316f65570921"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 07 Oct 2021 18:10:43 GMT",
       "tag": "@pulumi/facet_v0.1.0",
       "version": "0.1.0",

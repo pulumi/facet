@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Upgrade fast components to pull in bug fix.",
-  "packageName": "@pulumi/facet",
-  "email": "c@nunciato.org",
-  "dependentChangeType": "patch"
-}
