@@ -1809,13 +1809,13 @@
   integrity sha512-XDEnRYxPO5P3Jsizm4TCxLu1osS/uV3Lym6SfRhq2PxfXPTgEcdvOYDUXyV2drqebs3U5VQnOcYcJiSp73xhng==
 
 "@microsoft/fast-components@^2.11.0":
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/@microsoft/fast-components/-/fast-components-2.11.0.tgz#83cca834e18cef8186b238ac62cb13061c98ddce"
-  integrity sha512-zqcMkWr1XPv3yL6MpraI2J8YTKIbUfTBar8DAvqZLCbItZVa1qc6HLQlIfdZQu2r+Va2yfZR3JQ7VMPdYgMyGw==
+  version "2.11.9"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-components/-/fast-components-2.11.9.tgz#51d8db55a253b320771e3759296643cc27a3fee9"
+  integrity sha512-/FnyeXKigWrNLOn6FdgU49hRxobvkyjJD5bkg7i+QY/BOa82FeUr1GY7p6iUS4cIetCwsv0qwa//X5voD0Lo6A==
   dependencies:
     "@microsoft/fast-colors" "^5.1.3"
     "@microsoft/fast-element" "^1.5.1"
-    "@microsoft/fast-foundation" "^2.15.0"
+    "@microsoft/fast-foundation" "^2.17.1"
     "@microsoft/fast-web-utilities" "^5.0.0"
     tslib "^1.13.0"
     vscode-html-languageservice "^4.0.3"
@@ -1829,6 +1829,17 @@
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/@microsoft/fast-foundation/-/fast-foundation-2.15.0.tgz#36693bd22bf86d724cdd5e5234f80c08a9d0363c"
   integrity sha512-pKpMmP3IZ1MCtXLLmF16tkzneX7e98zBiNkIomq/dwnIQCFi6DB9waAAuVlR9uquBK367yN9TJXUU/vt4CSqLw==
+  dependencies:
+    "@microsoft/fast-element" "^1.5.1"
+    "@microsoft/fast-web-utilities" "^5.0.0"
+    "@microsoft/tsdoc-config" "^0.13.4"
+    tabbable "^5.2.0"
+    tslib "^1.13.0"
+
+"@microsoft/fast-foundation@^2.17.1":
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/@microsoft/fast-foundation/-/fast-foundation-2.17.1.tgz#2b56527a82bbd3a776d48cb03fd0360c0066e65b"
+  integrity sha512-nMCXbOc3cyVXu0QE8T0GZo1zsCQKTWekuwYYqgk42tA4FB1UxrDJrc5U3PJLEjvSpfEQ5aceCIVykpnfiHM1PA==
   dependencies:
     "@microsoft/fast-element" "^1.5.1"
     "@microsoft/fast-web-utilities" "^5.0.0"
