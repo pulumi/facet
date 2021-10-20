@@ -2,6 +2,21 @@
   "name": "@pulumi/facet",
   "entries": [
     {
+      "date": "Wed, 20 Oct 2021 22:01:14 GMT",
+      "tag": "@pulumi/facet_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "kimberley@pulumi.com",
+            "package": "@pulumi/facet",
+            "comment": "Remove storybook examples and example story assets.  Add select component.",
+            "commit": "d531c7b7c9d0175fd8c30f0820d500e509acb2ee"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 07 Oct 2021 20:28:59 GMT",
       "tag": "@pulumi/facet_v0.1.1",
       "version": "0.1.1",
