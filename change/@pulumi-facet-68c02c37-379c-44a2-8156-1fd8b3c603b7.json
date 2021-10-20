@@ -1,0 +1,10 @@
+{
+  "type": "minor",
+  "comment": {
+    "title": "",
+    "value": ""
+  },
+  "packageName": "@pulumi/facet",
+  "email": "kimberley@pulumi.com",
+  "dependentChangeType": "patch"
+}
