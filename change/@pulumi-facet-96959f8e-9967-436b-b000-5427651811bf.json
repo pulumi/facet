@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Remove storybook examples and example story assets.  Add select component.",
+  "packageName": "@pulumi/facet",
+  "email": "kimberley@pulumi.com",
+  "dependentChangeType": "patch"
+}
