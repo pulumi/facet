@@ -1,37 +1,22 @@
-import { initDesignSystem, checkbox, counter, disclosure, accordion, accordionItem, card, combobox, option, button, tabs, tab, tabPanel, treeView, treeItem, textField, select } from "@pulumi/facet";
+import { initDesignSystem, updateDesignSystem, PulumiButton } from "@pulumi/facet";
 
-import { type } from "@pulumi/facet/dist/design/core";
-
-import { DesignToken } from "@microsoft/fast-foundation";
-
-const fontFamilyDefault = DesignToken.create<string>("font-family-default");
-fontFamilyDefault.withDefault(type.font.default);
-
-const fontFamilyHeading = DesignToken.create<string>("font-family-heading");
-fontFamilyHeading.withDefault(type.font.heading);
-
-const fontFamilyMono = DesignToken.create<string>("font-family-mono");
-fontFamilyMono.withDefault(type.font.mono);
+let theme = "web";
+let mode = "light";
 
 initDesignSystem({
-    prefix: "pulumi",
-    mode: "light",
-    components: [
-        accordion(),
-        accordionItem(),
-        button(),
-        card(),
-        checkbox(),
-        combobox(),
-        counter(),
-        disclosure(),
-        option(),
-        tab(),
-        tabs(),
-        tabPanel(),
-        treeView(),
-        treeItem(),
-        textField(),
-        select(),
-    ],
+    mode,
+    theme,
+    components: [PulumiButton],
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#mode-toggle").addEventListener("click", () => {
+        mode = mode === "light" ? "dark" : "light";
+        updateDesignSystem({ mode, theme });
+    });
+
+    document.querySelector("#theme-toggle").addEventListener("click", () => {
+        theme = theme === "web" ? "console" : "web";
+        updateDesignSystem({ mode, theme });
+    });
 });

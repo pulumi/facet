@@ -1,11 +1,10 @@
 # Facet
 
-Facet is web component library and UI design system for Pulumi web projects, built with [Microsoft FAST](https://www.fast.design/).
+A design system and web component library for Pulumi.
 
 ## Usage
 
 Facet is distributed as an npm package. To use it:
-
 
 3. Install package in the usual way:
 
@@ -20,19 +19,18 @@ Facet is distributed as an npm package. To use it:
 4. Import it into your project with the module bundler of your choice:
 
     ```
-    import { initDesignSystem, button } from "@pulumi/facet";
+    import { initDesignSystem, PulumiButton } from "@pulumi/facet";
 
     initDesignSystem({
-        prefix: "pulumi",
         mode: "light",
         theme: "web",
         components: [
-            button(),
+            PulumiButton,
         ],
     });
     ```
 
-4. Use the components:
+5. Use the components:
 
     ```
     <html>
@@ -41,7 +39,7 @@ Facet is distributed as an npm package. To use it:
             <title>My Website</title>
     </head>
     <body>
-            <pulumi-button appearance="accent">Hellos 👋</pulumi-button>
+            <pulumi-button>Hellos 👋</pulumi-button>
             <script src="dist/bundle.js"></script>
     </body>
     </html>

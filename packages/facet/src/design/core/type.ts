@@ -6,7 +6,7 @@ export const type = {
     font: {
         default: `Inter, ${fallbackDefault}`,
         heading: `Gilroy, ${fallbackHeading}`,
-        mono: `"Roboto Mono", ${fallbackMono};`,
+        mono: `"Roboto Mono", ${fallbackMono}`,
     },
     ramp: {
         minus2: {
@@ -61,5 +61,5 @@ export const type = {
             fontSize: "8rem",
             lineHeight: "1",
         },
-    }
+    },
 };

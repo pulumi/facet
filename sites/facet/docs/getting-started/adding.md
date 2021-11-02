@@ -9,9 +9,7 @@ import { initDesignSystem, button } from "@pulumi/facet";
 
 initDesignSystem({
     prefix: "pulumi",
-    components: [
-        button(),
-    ],
+    components: [button()],
 });
 ```
 

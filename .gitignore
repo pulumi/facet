@@ -1,6 +1,9 @@
-dist
-node_modules
-storybook-static
-build
-yarn-error.log
 .npmrc
+.DS_Store
+node_modules
+yarn-error.log
+
+build
+dist
+storybook-static
+packages/facet/www

@@ -6,6 +6,7 @@ rm -rf \
     dist \
     node_modules \
     packages/facet/dist \
+    packages/facet/dist-stencil \
     packages/facet/node_modules \
     packages/facet/storybook-static \
     packages/facet/dist \

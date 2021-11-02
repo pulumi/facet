@@ -1,0 +1,12 @@
+:host {
+    display: inline-block;
+
+    button {
+        background-color: var(--neutral-fill-rest);
+        color: var(--neutral-foreground-rest);
+        border-radius: var(--control-corner-radius);
+        border: var(--control-stroke);
+        padding: var(--control-padding);
+        cursor: pointer;
+    }
+}
