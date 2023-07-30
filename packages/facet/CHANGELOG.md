@@ -1,8 +1,16 @@
 # Change Log - @pulumi/facet
 
-This log was last generated on Wed, 20 Oct 2021 22:01:14 GMT and should not be manually modified.
+This log was last generated on Sun, 30 Jul 2023 18:39:57 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.2.1
+
+Sun, 30 Jul 2023 18:39:57 GMT
+
+### Patches
+
+- Swap FAST for Stencil (chris@nunciato.org)
 
 ## 0.2.0
 
