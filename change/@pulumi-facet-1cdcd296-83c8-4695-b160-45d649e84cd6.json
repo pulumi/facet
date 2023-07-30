@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Swap FAST for Stencil",
+  "packageName": "@pulumi/facet",
+  "email": "chris@nunciato.org",
+  "dependentChangeType": "patch"
+}
