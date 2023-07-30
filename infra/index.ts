@@ -17,12 +17,4 @@ const site = new Website("website", {
     protocol: "https",
 });
 
-export const {
-    bucketName,
-    bucketWebsiteURL,
-    cdnDomainName,
-    cdnURL,
-    apiGatewayURL,
-    websiteURL,
-    websiteLogsBucketName,
-} = site;
+export const { bucketName, bucketWebsiteURL, cdnDomainName, cdnURL, apiGatewayURL, websiteURL, websiteLogsBucketName } = site;

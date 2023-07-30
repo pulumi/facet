@@ -14,6 +14,22 @@ serve:
 build:
 	./scripts/build.sh
 
+.PHONY: test
+test:
+	./scripts/test.sh
+
+.PHONY: lint
+lint:
+	./scripts/lint.sh
+
+.PHONY: format
+format:
+	./scripts/format.sh
+
+.PHONY: component
+component:
+	./scripts/generate.sh component
+
 .PHONY: deploy
 deploy:
 	./scripts/deploy.sh

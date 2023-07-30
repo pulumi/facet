@@ -6,13 +6,7 @@ export default {
         appearance: {
             control: {
                 type: "select",
-                options: [
-                    "accent",
-                    "lightweight",
-                    "neutral",
-                    "outline",
-                    "stealth",
-                ],
+                options: ["accent", "lightweight", "neutral", "outline", "stealth"],
             },
         },
         disabled: {

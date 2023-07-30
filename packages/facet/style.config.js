@@ -25,18 +25,22 @@ module.exports = {
         scss: {
             transformGroup: "scss",
             buildPath: "dist/tokens/scss/",
-            files: [{
-                format: "scss/variables",
-                destination: "_variables.scss",
-            }],
+            files: [
+                {
+                    format: "scss/variables",
+                    destination: "_variables.scss",
+                },
+            ],
         },
         css: {
             transformGroup: "css",
             buildPath: "dist/tokens/css/",
-            files: [{
-                destination: `variables.css`,
-                format: `css/variables`,
-            }],
+            files: [
+                {
+                    destination: `variables.css`,
+                    format: `css/variables`,
+                },
+            ],
         },
     },
 };

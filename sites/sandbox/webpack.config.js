@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = function(env, { mode }) {
+module.exports = function (env, { mode }) {
     return {
         mode: mode || "production",
         devtool: "inline-source-map",
@@ -18,7 +18,7 @@ module.exports = function(env, { mode }) {
         ],
         resolve: {
             extensions: [".ts", ".js"],
-            modules: ["src", "node_modules"]
+            modules: ["src", "node_modules"],
         },
         devServer: {
             port: 4000,
@@ -31,10 +31,10 @@ module.exports = function(env, { mode }) {
                     test: /\.ts$/i,
                     use: [
                         {
-                            loader: "ts-loader"
-                        }
+                            loader: "ts-loader",
+                        },
                     ],
-                    exclude: /node_modules/
+                    exclude: /node_modules/,
                 },
             ],
         },

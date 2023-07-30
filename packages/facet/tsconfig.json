@@ -1,10 +1,17 @@
 {
     "extends": "../../tsconfig",
     "compilerOptions": {
-        "rootDir": "src",
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "declaration": true,
+        "declarationMap": false,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "outDir": "dist",
+        "rootDir": "src",
+        "target": "es2017"
     },
-    "include": [
-        "src/index.ts"
-    ]
+    "include": ["src"]
 }

@@ -8,12 +8,8 @@
         "importHelpers": true,
         "experimentalDecorators": true,
         "declaration": true,
-        "declarationMap": true,
         "noEmitOnError": true,
         "sourceMap": true,
-        "lib": [
-            "dom",
-            "es2015"
-        ]
+        "lib": ["dom", "es2015"]
     }
 }

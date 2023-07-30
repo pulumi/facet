@@ -1,0 +1,7 @@
+node_modules
+build
+dist
+storybook-static
+packages/facet/www
+packages/facet/src/components.d.ts
+sites/facet/.docusaurus

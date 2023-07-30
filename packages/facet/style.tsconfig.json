@@ -5,9 +5,7 @@
         "module": "esnext",
         "moduleResolution": "node",
         "strict": true,
-        "outDir": "dist/tokens",
+        "outDir": "dist/tokens"
     },
-    "include": [
-        "./src/tokens/index.ts"
-    ]
+    "include": ["./src/tokens/index.ts"]
 }
